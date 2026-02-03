@@ -79,7 +79,7 @@ export default function RootLayout({
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                email: "contact@xustudio.com",
+                email: "contact@thexustudio.com",
                 contactType: "customer service",
               },
             }),

@@ -307,7 +307,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm">Email us at</p>
-                    <p className="font-medium">contact@xustudio.com</p>
+                    <p className="font-medium">contact@thexustudio.com</p>
                   </div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default function Home() {
             <p className="text-slate-500">
               © {new Date().getFullYear()} Xu Studio LLC. All rights reserved.
             </p>
-            <a href="mailto:contact@xustudio.com" className="text-slate-400 hover:text-white transition">
+            <a href="mailto:contact@thexustudio.com" className="text-slate-400 hover:text-white transition">
               <Mail className="w-5 h-5" />
             </a>
           </div>
