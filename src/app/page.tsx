@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, Linkedin, Github, CheckCircle, Zap, Shield, Users } from 'lucide-react';
+import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Users } from 'lucide-react';
 import Link from 'next/link';
 
 const fadeInUp = {
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
               <Brain className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold">TheXu Studio</span>
+            <span className="text-xl font-bold">Xu Studio</span>
           </Link>
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-slate-300 hover:text-white transition">Services</a>
@@ -210,7 +210,7 @@ export default function Home() {
                 Building the Future with AI
               </h2>
               <p className="text-slate-400 text-lg mb-6">
-                TheXu Studio is a boutique AI development firm dedicated to helping businesses 
+                Xu Studio LLC is a boutique AI development firm dedicated to helping businesses 
                 leverage cutting-edge artificial intelligence technologies. We believe AI should 
                 be accessible, practical, and transformative.
               </p>
@@ -245,8 +245,8 @@ export default function Home() {
                   <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto mb-6">
                     <Brain className="w-16 h-16 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Ethan Pan</h3>
-                  <p className="text-slate-400">Founder & AI Engineer</p>
+                  <h3 className="text-2xl font-bold mb-2">Xu Studio</h3>
+                  <p className="text-slate-400">AI Innovation Lab</p>
                 </div>
               </div>
               {/* Decorative elements */}
@@ -297,41 +297,41 @@ export default function Home() {
               </h2>
               <p className="text-slate-400 text-lg mb-8">
                 Have a project in mind or want to learn more about how AI can help your business? 
-                We'd love to hear from you.
+                We'd love to hear from you. Fill out the form and we'll get back to you within 24 hours.
               </p>
               
               <div className="space-y-6">
-                <a 
-                  href="mailto:ethan.jianxu@gmail.com" 
-                  className="flex items-center gap-4 text-lg hover:text-purple-400 transition"
-                >
+                <div className="flex items-center gap-4 text-lg">
                   <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
                     <Mail className="w-5 h-5 text-purple-400" />
                   </div>
-                  ethan.jianxu@gmail.com
-                </a>
-                <a 
-                  href="https://linkedin.com/in/jianxupan" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-lg hover:text-purple-400 transition"
-                >
-                  <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
-                    <Linkedin className="w-5 h-5 text-purple-400" />
+                  <div>
+                    <p className="text-slate-400 text-sm">Email us at</p>
+                    <p className="font-medium">contact@xustudio.com</p>
                   </div>
-                  LinkedIn
-                </a>
-                <a 
-                  href="https://github.com/ethansure" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-lg hover:text-purple-400 transition"
-                >
-                  <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
-                    <Github className="w-5 h-5 text-purple-400" />
-                  </div>
-                  GitHub
-                </a>
+                </div>
+              </div>
+
+              <div className="mt-8 p-6 bg-slate-800/30 border border-slate-700 rounded-2xl">
+                <h3 className="font-semibold mb-3">Why Work With Us?</h3>
+                <ul className="space-y-2 text-slate-400">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-400" />
+                    Free initial consultation
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-400" />
+                    No commitment required
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-400" />
+                    Response within 24 hours
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-400" />
+                    Transparent pricing
+                  </li>
+                </ul>
               </div>
             </motion.div>
             
@@ -356,6 +356,14 @@ export default function Home() {
                       type="email" 
                       className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
                       placeholder="your@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Company (Optional)</label>
+                    <input 
+                      type="text" 
+                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                      placeholder="Your company"
                     />
                   </div>
                   <div>
@@ -387,22 +395,14 @@ export default function Home() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
                 <Brain className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold">TheXu Studio</span>
+              <span className="text-xl font-bold">Xu Studio</span>
             </div>
             <p className="text-slate-500">
-              © {new Date().getFullYear()} TheXu Studio. All rights reserved.
+              © {new Date().getFullYear()} Xu Studio LLC. All rights reserved.
             </p>
-            <div className="flex gap-4">
-              <a href="https://github.com/ethansure" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="https://linkedin.com/in/jianxupan" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="mailto:ethan.jianxu@gmail.com" className="text-slate-400 hover:text-white transition">
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
+            <a href="mailto:contact@xustudio.com" className="text-slate-400 hover:text-white transition">
+              <Mail className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </footer>

@@ -8,17 +8,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TheXu Studio | AI Integration & Software Development",
+  title: "Xu Studio | AI Integration & Software Development",
   description: "Transform your business with AI. We specialize in AI integration, custom LLM solutions, and intelligent software development. Get a free consultation today.",
   keywords: ["AI integration", "LLM development", "AI consulting", "ChatGPT solutions", "AI software development", "machine learning", "artificial intelligence", "San Francisco"],
-  authors: [{ name: "Ethan Pan" }],
-  creator: "TheXu Studio",
+  authors: [{ name: "Xu Studio LLC" }],
+  creator: "Xu Studio LLC",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://thexustudio.com",
-    siteName: "TheXu Studio",
-    title: "TheXu Studio | AI Integration & Software Development",
+    url: "https://xustudio.com",
+    siteName: "Xu Studio",
+    title: "Xu Studio | AI Integration & Software Development",
     description: "Transform your business with AI. Custom AI integration, LLM solutions, and intelligent software development.",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TheXu Studio | AI Integration & Software Development",
+    title: "Xu Studio | AI Integration & Software Development",
     description: "Transform your business with AI. Custom AI integration, LLM solutions, and intelligent software development.",
     images: ["/og-image.png"],
   },
@@ -67,14 +67,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "TheXu Studio",
-              url: "https://thexustudio.com",
-              logo: "https://thexustudio.com/logo.png",
+              name: "Xu Studio LLC",
+              url: "https://xustudio.com",
+              logo: "https://xustudio.com/logo.png",
               description: "AI Integration & Software Development Company",
-              founder: {
-                "@type": "Person",
-                name: "Ethan Pan",
-              },
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "San Francisco",
@@ -83,13 +79,9 @@ export default function RootLayout({
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                email: "ethan.jianxu@gmail.com",
+                email: "contact@xustudio.com",
                 contactType: "customer service",
               },
-              sameAs: [
-                "https://github.com/ethansure",
-                "https://linkedin.com/in/jianxupan",
-              ],
             }),
           }}
         />
@@ -102,7 +94,7 @@ export default function RootLayout({
               serviceType: "AI Integration & Development",
               provider: {
                 "@type": "Organization",
-                name: "TheXu Studio",
+                name: "Xu Studio LLC",
               },
               areaServed: "Worldwide",
               description: "Custom AI integration, LLM solutions, and intelligent software development services.",
