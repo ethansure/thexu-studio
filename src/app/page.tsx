@@ -1,7 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Users } from 'lucide-react';
+import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Users, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 
 const fadeInUp = {
@@ -18,6 +19,41 @@ const staggerContainer = {
 };
 
 export default function Home() {
+  const [formData, setFormData] = useState({ name: '', email: '', company: '', message: '' });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/contact@thexustudio.com', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || 'Not provided',
+          message: formData.message,
+          _subject: `New Contact from ${formData.name} - Xu Studio Website`
+        })
+      });
+      
+      const data = await response.json();
+      if (data.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', company: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
       {/* Navigation */}
@@ -340,48 +376,84 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <form className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
-                <div className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Company (Optional)</label>
-                    <input 
-                      type="text" 
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                      placeholder="Your company"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Message</label>
-                    <textarea 
-                      rows={4}
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition resize-none"
-                      placeholder="Tell us about your project..."
-                    />
-                  </div>
+              {status === 'success' ? (
+                <div className="bg-slate-800/50 border border-green-500/50 rounded-2xl p-8 text-center">
+                  <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
+                  <p className="text-slate-400 mb-6">Thank you for reaching out. We&apos;ll get back to you within 24 hours.</p>
                   <button 
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-4 rounded-xl font-semibold hover:opacity-90 transition"
+                    onClick={() => setStatus('idle')}
+                    className="text-purple-400 hover:text-purple-300 transition"
                   >
-                    Send Message
+                    Send another message
                   </button>
                 </div>
-              </form>
+              ) : (
+                <form onSubmit={handleSubmit} className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+                  <div className="space-y-6">
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Name</label>
+                      <input 
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Email</label>
+                      <input 
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Company (Optional)</label>
+                      <input 
+                        type="text"
+                        value={formData.company}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                        className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                        placeholder="Your company"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Message</label>
+                      <textarea 
+                        rows={4}
+                        required
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        className="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition resize-none"
+                        placeholder="Tell us about your project..."
+                      />
+                    </div>
+                    {status === 'error' && (
+                      <p className="text-red-400 text-sm">Something went wrong. Please try again.</p>
+                    )}
+                    <button 
+                      type="submit"
+                      disabled={status === 'loading'}
+                      className="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-4 rounded-xl font-semibold hover:opacity-90 transition disabled:opacity-50 flex items-center justify-center gap-2"
+                    >
+                      {status === 'loading' ? (
+                        <>
+                          <Loader2 className="w-5 h-5 animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        'Send Message'
+                      )}
+                    </button>
+                  </div>
+                </form>
+              )}
             </motion.div>
           </div>
         </div>
