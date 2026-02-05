@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://xustudio.com",
+    url: "https://thexustudio.com",
     siteName: "Xu Studio",
     title: "Xu Studio | AI Integration & Software Development",
     description: "Transform your business with AI. Custom AI integration, LLM solutions, and intelligent software development.",
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
+  alternates: {
+    canonical: 'https://thexustudio.com',
   },
 };
 
@@ -68,8 +68,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Xu Studio LLC",
-              url: "https://xustudio.com",
-              logo: "https://xustudio.com/logo.png",
+              url: "https://thexustudio.com",
+              logo: "https://thexustudio.com/logo.png",
               description: "AI Integration & Software Development Company",
               address: {
                 "@type": "PostalAddress",
