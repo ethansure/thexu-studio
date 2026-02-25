@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Xu Studio | AI Integration & Software Development",
   description: "Transform your business with AI. We specialize in AI integration, custom LLM solutions, and intelligent software development. Get a free consultation today.",
-  keywords: ["AI integration", "LLM development", "AI consulting", "ChatGPT solutions", "AI software development", "machine learning", "artificial intelligence", "San Francisco"],
+  keywords: ["AI integration", "LLM development", "AI consulting", "ChatGPT solutions", "AI software development", "machine learning", "artificial intelligence", "San Francisco", "AI agent development", "custom AI agents", "AI agent optimization", "autonomous agents", "AI assistant development", "multi-agent systems", "AI agent consulting", "build AI agent"],
   authors: [{ name: "Xu Studio LLC" }],
   creator: "Xu Studio LLC",
   openGraph: {

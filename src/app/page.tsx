@@ -67,6 +67,7 @@ export default function Home() {
           </Link>
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-slate-300 hover:text-white transition">Services</a>
+            <Link href="/ai-agents" className="text-slate-300 hover:text-white transition">AI Agents</Link>
             <a href="#about" className="text-slate-300 hover:text-white transition">About</a>
             <a href="#contact" className="text-slate-300 hover:text-white transition">Contact</a>
           </div>
