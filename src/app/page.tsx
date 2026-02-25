@@ -68,7 +68,7 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-slate-300 hover:text-white transition">Services</a>
             <Link href="/ai-agents" className="text-slate-300 hover:text-white transition">AI Agents</Link>
-            <a href="#about" className="text-slate-300 hover:text-white transition">About</a>
+            <Link href="/case-studies" className="text-slate-300 hover:text-white transition">Case Studies</Link>
             <a href="#contact" className="text-slate-300 hover:text-white transition">Contact</a>
           </div>
           <a href="#contact" className="bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-2 rounded-full font-medium hover:opacity-90 transition">
@@ -258,7 +258,7 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { label: 'Founded', value: '2020' },
+                  { label: 'Founded', value: '2025' },
                   { label: 'Location', value: 'San Francisco, CA' },
                   { label: 'Focus', value: 'AI & LLM Solutions' },
                   { label: 'Clients', value: 'Global' }
