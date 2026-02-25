@@ -196,9 +196,9 @@ export default function Home() {
               },
               {
                 icon: MessageSquare,
-                title: 'AI Customer Service',
-                description: 'Transform customer experience with AI. Instant responses, smart routing, and personalized interactions at scale.',
-                features: ['24/7 AI Support', 'Intelligent Ticket Routing', 'Sentiment Analysis']
+                title: 'AI Voice Agents',
+                description: 'Deploy intelligent voice AI for calls, appointments, and customer service. 24/7 phone support that sounds natural and handles complex conversations.',
+                features: ['Inbound/Outbound Calls', 'Appointment Scheduling', 'Natural Conversations']
               },
               {
                 icon: Shield,
