@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Xu Studio | AI Integration & Software Development",
-  description: "Transform your business with AI. We specialize in AI integration, custom LLM solutions, and intelligent software development. Get a free consultation today.",
-  keywords: ["AI integration", "LLM development", "AI consulting", "ChatGPT solutions", "AI software development", "machine learning", "artificial intelligence", "San Francisco", "AI agent development", "custom AI agents", "AI agent optimization", "autonomous agents", "AI assistant development", "multi-agent systems", "AI agent consulting", "build AI agent"],
+  title: "AI Chatbot & Agent Development | Custom AI Solutions | Xu Studio",
+  description: "Build AI chatbots, agents, and automation solutions for your business. Custom GPT-4 & Claude integration, 24/7 AI customer service, workflow automation. Free consultation.",
+  keywords: ["AI chatbot development", "AI agent development", "custom AI chatbot", "AI automation services", "ChatGPT integration", "Claude AI integration", "AI customer service", "business AI solutions", "AI workflow automation", "LLM development", "AI consulting", "build AI agent", "AI chatbot for business", "enterprise AI", "AI integration services", "custom AI solutions"],
   authors: [{ name: "Xu Studio LLC" }],
   creator: "Xu Studio LLC",
   openGraph: {
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://thexustudio.com",
     siteName: "Xu Studio",
-    title: "Xu Studio | AI Integration & Software Development",
-    description: "Transform your business with AI. Custom AI integration, LLM solutions, and intelligent software development.",
+    title: "AI Chatbot & Agent Development | Custom AI Solutions | Xu Studio",
+    description: "Build AI chatbots, agents, and automation for your business. Custom GPT-4 & Claude integration. Free consultation.",
     images: [
       {
         url: "/og-image.png",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Xu Studio | AI Integration & Software Development",
-    description: "Transform your business with AI. Custom AI integration, LLM solutions, and intelligent software development.",
+    title: "AI Chatbot & Agent Development | Xu Studio",
+    description: "Build AI chatbots, agents, and automation for your business. Custom GPT-4 & Claude integration. Free consultation.",
     images: ["/og-image.png"],
   },
   robots: {

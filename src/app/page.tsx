@@ -171,46 +171,40 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                icon: Bot,
+                title: 'AI Agents & Chatbots',
+                description: 'Build intelligent AI agents and chatbots that handle customer support, sales, and complex tasks 24/7. Reduce costs by up to 70%.',
+                features: ['Custom Chatbot Development', 'AI Agent Optimization', 'Multi-Channel Support']
+              },
+              {
+                icon: Zap,
+                title: 'AI Workflow Automation',
+                description: 'Automate repetitive tasks and complex workflows with AI. From data entry to decision-making, save 20+ hours per week.',
+                features: ['Process Automation', 'Smart Document Processing', 'API Orchestration']
+              },
+              {
                 icon: Brain,
                 title: 'AI Integration',
-                description: 'Seamlessly integrate AI capabilities into your existing systems and workflows. We connect your business to the latest AI technologies.',
-                features: ['API Integration', 'Workflow Automation', 'Data Pipeline Setup']
+                description: 'Connect GPT-4, Claude, and other AI models to your existing systems. Seamless integration with CRM, ERP, and custom software.',
+                features: ['LLM API Integration', 'Legacy System Connection', 'Real-time AI Pipelines']
               },
               {
                 icon: Code,
                 title: 'Custom AI Development',
-                description: 'Build bespoke AI-powered applications tailored to your unique requirements. From concept to deployment.',
-                features: ['Full-Stack Development', 'AI/ML Models', 'Cloud Deployment']
+                description: 'Build AI-powered applications from scratch. Full-stack development with cutting-edge machine learning and LLM technology.',
+                features: ['AI SaaS Products', 'ML Model Training', 'Enterprise AI Solutions']
               },
               {
                 icon: MessageSquare,
-                title: 'LLM Solutions',
-                description: 'Leverage large language models like GPT-4, Claude, and more to automate tasks, enhance customer service, and generate content.',
-                features: ['Chatbots & Assistants', 'Content Generation', 'Document Processing']
-              },
-              {
-                icon: Zap,
-                title: 'Process Automation',
-                description: 'Identify and automate repetitive tasks using AI, saving time and reducing errors across your organization.',
-                features: ['Workflow Analysis', 'RPA Integration', 'Performance Tracking']
+                title: 'AI Customer Service',
+                description: 'Transform customer experience with AI. Instant responses, smart routing, and personalized interactions at scale.',
+                features: ['24/7 AI Support', 'Intelligent Ticket Routing', 'Sentiment Analysis']
               },
               {
                 icon: Shield,
-                title: 'AI Consulting',
-                description: 'Strategic guidance on AI adoption, technology selection, and implementation roadmaps for your business.',
-                features: ['Technology Assessment', 'ROI Analysis', 'Implementation Planning']
-              },
-              {
-                icon: Users,
-                title: 'Training & Support',
-                description: 'Empower your team with AI knowledge through customized training programs and ongoing technical support.',
-                features: ['Team Workshops', 'Documentation', '24/7 Support']
-              },
-              {
-                icon: Bot,
-                title: 'AI Agent Solutions',
-                description: 'Design, customize, and optimize intelligent AI agents tailored to your business. From personal assistants to autonomous workflows.',
-                features: ['Custom Agent Development', 'Agent Optimization', 'Multi-Agent Systems']
+                title: 'AI Strategy & Consulting',
+                description: 'Expert guidance on AI adoption. We help you identify opportunities, build roadmaps, and maximize ROI on AI investments.',
+                features: ['AI Readiness Assessment', 'Technology Selection', 'Implementation Planning']
               }
             ].map((service, i) => (
               <motion.div
