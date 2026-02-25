@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Users, Loader2 } from 'lucide-react';
+import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Users, Loader2, Bot } from 'lucide-react';
 import Link from 'next/link';
 
 const fadeInUp = {
@@ -204,6 +204,12 @@ export default function Home() {
                 title: 'Training & Support',
                 description: 'Empower your team with AI knowledge through customized training programs and ongoing technical support.',
                 features: ['Team Workshops', 'Documentation', '24/7 Support']
+              },
+              {
+                icon: Bot,
+                title: 'AI Agent Solutions',
+                description: 'Design, customize, and optimize intelligent AI agents tailored to your business. From personal assistants to autonomous workflows.',
+                features: ['Custom Agent Development', 'Agent Optimization', 'Multi-Agent Systems']
               }
             ].map((service, i) => (
               <motion.div
