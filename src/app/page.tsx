@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Users, Loader2, Bot } from 'lucide-react';
+import { Brain, Code, Sparkles, MessageSquare, ArrowRight, Mail, CheckCircle, Zap, Shield, Loader2, Bot } from 'lucide-react';
 import Link from 'next/link';
 
 const fadeInUp = {
@@ -67,7 +67,10 @@ export default function Home() {
           </Link>
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-slate-300 hover:text-white transition">Services</a>
+            <Link href="/ai-automation" className="text-slate-300 hover:text-white transition">AI Automation</Link>
+            <Link href="/ai-chatbot" className="text-slate-300 hover:text-white transition">AI Chatbots</Link>
             <Link href="/ai-agents" className="text-slate-300 hover:text-white transition">AI Agents</Link>
+            <Link href="/chatgpt-integration" className="text-slate-300 hover:text-white transition">ChatGPT Integration</Link>
             <Link href="/case-studies" className="text-slate-300 hover:text-white transition">Case Studies</Link>
             <a href="#contact" className="text-slate-300 hover:text-white transition">Contact</a>
           </div>
@@ -172,21 +175,24 @@ export default function Home() {
             {[
               {
                 icon: Bot,
-                title: 'AI Agents & Chatbots',
-                description: 'Build intelligent AI agents and chatbots that handle customer support, sales, and complex tasks 24/7. Reduce costs by up to 70%.',
-                features: ['Custom Chatbot Development', 'AI Agent Optimization', 'Multi-Channel Support']
+                title: 'AI Chatbot Development',
+                description: 'Build reliable AI chatbots for support, lead capture, and internal knowledge—production-grade guardrails, analytics, and integrations.',
+                features: ['RAG Knowledge Base', 'Multi-Channel Support', 'Human Handoff'],
+                href: '/ai-chatbot'
               },
               {
                 icon: Zap,
                 title: 'AI Workflow Automation',
                 description: 'Automate repetitive tasks and complex workflows with AI. From data entry to decision-making, save 20+ hours per week.',
-                features: ['Process Automation', 'Smart Document Processing', 'API Orchestration']
+                features: ['Process Automation', 'Smart Document Processing', 'API Orchestration'],
+                href: '/ai-automation'
               },
               {
                 icon: Brain,
                 title: 'AI Integration',
                 description: 'Connect GPT-4, Claude, and other AI models to your existing systems. Seamless integration with CRM, ERP, and custom software.',
-                features: ['LLM API Integration', 'Legacy System Connection', 'Real-time AI Pipelines']
+                features: ['LLM API Integration', 'Legacy System Connection', 'Real-time AI Pipelines'],
+                href: '/chatgpt-integration'
               },
               {
                 icon: Code,
@@ -218,7 +224,13 @@ export default function Home() {
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:from-blue-500/30 group-hover:to-purple-600/30 transition">
                   <service.icon className="w-7 h-7 text-purple-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                {service.href ? (
+                  <Link href={service.href} className="text-xl font-bold mb-3 inline-block hover:text-white/90 transition">
+                    {service.title}
+                  </Link>
+                ) : (
+                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                )}
                 <p className="text-slate-400 mb-4">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature) => (
@@ -253,7 +265,7 @@ export default function Home() {
               </p>
               <p className="text-slate-400 text-lg mb-8">
                 Our team combines deep technical expertise with business acumen to deliver 
-                solutions that drive real results. From startups to enterprises, we've helped 
+                solutions that drive real results. From startups to enterprises, we&apos;ve helped 
                 organizations across industries unlock the power of AI.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -306,7 +318,7 @@ export default function Home() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-slate-300 text-lg mb-8">
-              Let's discuss how AI can solve your challenges and drive growth. 
+              Let&apos;s discuss how AI can solve your challenges and drive growth. 
               Book a free consultation today.
             </p>
             <a 
@@ -334,7 +346,7 @@ export default function Home() {
               </h2>
               <p className="text-slate-400 text-lg mb-8">
                 Have a project in mind or want to learn more about how AI can help your business? 
-                We'd love to hear from you. Fill out the form and we'll get back to you within 24 hours.
+                We&apos;d love to hear from you. Fill out the form and we&apos;ll get back to you within 24 hours.
               </p>
               
               <div className="space-y-6">

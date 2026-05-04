@@ -9,6 +9,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://thexustudio.com/ai-chatbot',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://thexustudio.com/ai-automation',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: 'https://thexustudio.com/ai-agents',
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -16,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://thexustudio.com/case-studies',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://thexustudio.com/chatgpt-integration',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
