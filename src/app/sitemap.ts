@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://thexustudio.com/case-studies/ecommerce-chatbot',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://thexustudio.com/chatgpt-integration',
       lastModified: new Date(),
       changeFrequency: 'weekly',

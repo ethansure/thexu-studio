@@ -7,6 +7,7 @@ import Link from 'next/link';
 const caseStudies = [
   {
     id: 'ecommerce-chatbot',
+    href: '/case-studies/ecommerce-chatbot',
     icon: Bot,
     category: 'AI Chatbot',
     title: 'E-commerce Customer Support Automation',
@@ -32,6 +33,7 @@ const caseStudies = [
   },
   {
     id: 'workflow-automation',
+    href: '/case-studies',
     icon: Zap,
     category: 'Workflow Automation',
     title: 'Invoice Processing Automation for Accounting Firm',
@@ -57,6 +59,7 @@ const caseStudies = [
   },
   {
     id: 'ai-integration',
+    href: '/case-studies',
     icon: Brain,
     category: 'AI Integration',
     title: 'Claude AI Integration for Legal Document Review',
@@ -82,6 +85,7 @@ const caseStudies = [
   },
   {
     id: 'custom-ai-saas',
+    href: '/case-studies',
     icon: Code,
     category: 'Custom AI Development',
     title: 'AI-Powered Recruitment Screening Platform',
@@ -108,6 +112,7 @@ const caseStudies = [
   },
   {
     id: 'ai-customer-service',
+    href: '/case-studies',
     icon: MessageSquare,
     category: 'AI Customer Service',
     title: '24/7 AI Support for SaaS Company',
@@ -133,6 +138,7 @@ const caseStudies = [
   },
   {
     id: 'ai-consulting',
+    href: '/case-studies',
     icon: Shield,
     category: 'AI Strategy',
     title: 'AI Transformation Roadmap for Healthcare Provider',
@@ -313,6 +319,19 @@ export default function CaseStudiesPage() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Detail link */}
+                  {study.href !== '/case-studies' && (
+                    <div className="mt-6">
+                      <Link
+                        href={study.href}
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-blue-300 hover:text-blue-200 transition"
+                      >
+                        Read the full case study
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
