@@ -24,6 +24,7 @@ export default function AIAgentsPage() {
           <div className="hidden md:flex items-center gap-8">
             <Link href="/#services" className="text-slate-300 hover:text-white transition">Services</Link>
             <Link href="/#about" className="text-slate-300 hover:text-white transition">About</Link>
+            <Link href="/insights" className="text-slate-300 hover:text-white transition">Insights</Link>
             <Link href="/#contact" className="text-slate-300 hover:text-white transition">Contact</Link>
           </div>
           <Link href="/#contact" className="bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-2 rounded-full font-medium hover:opacity-90 transition">
@@ -233,6 +234,28 @@ export default function AIAgentsPage() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Read next */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/40 p-8">
+            <h2 className="text-2xl md:text-3xl font-bold">Choosing an AI agent development partner</h2>
+            <p className="mt-3 text-slate-400">
+              If you&apos;re comparing vendors, this checklist covers what matters in production: evaluation, security,
+              integrations, and realistic timelines.
+            </p>
+            <div className="mt-6">
+              <Link
+                href="/insights/ai-agent-development-company"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 font-semibold hover:bg-slate-800 transition"
+              >
+                Read the 2026 checklist
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

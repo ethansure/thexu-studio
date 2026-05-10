@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Agent Development Company: How to Choose (2026 Checklist)',
+    description:
+      'A practical checklist for choosing an AI agent development company: evaluation, integrations, security, and realistic delivery timelines.',
+    href: '/insights/ai-agent-development-company',
+    date: '2026-05-10',
+  },
+  {
     title: 'AI Chatbot Development Cost & Timeline (2026 Guide)',
     description:
       'A practical breakdown of what drives cost, typical timelines, and how to scope an AI chatbot that actually ships to production.',
@@ -75,4 +82,3 @@ export default function InsightsIndexPage() {
     </div>
   )
 }
-
