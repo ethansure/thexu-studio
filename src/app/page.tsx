@@ -184,8 +184,8 @@ export default function Home() {
               {
                 icon: Zap,
                 title: 'AI Workflow Automation',
-                description: 'Automate repetitive tasks and complex workflows with AI. From data entry to decision-making, save 20+ hours per week.',
-                features: ['Process Automation', 'Smart Document Processing', 'API Orchestration'],
+                description: 'Ship production AI automations with n8n / Make / Zapier: route leads, process documents, and run agent workflows with logs, safety checks, and MCP integrations.',
+                features: ['n8n / Make / Zapier', 'MCP Tool Calling', 'Observability & QA'],
                 href: '/ai-automation'
               },
               {
