@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'Custom AI Solutions: What to Build, Cost, and Examples (2026 Guide)',
+    description:
+      'A practical guide to choosing the right custom AI solution: where AI actually delivers ROI, typical costs, timelines, and real implementation patterns.',
+    href: '/insights/custom-ai-solutions',
+    date: '2026-05-11',
+  },
+  {
     title: 'AI Agent Development Company: How to Choose (2026 Checklist)',
     description:
       'A practical checklist for choosing an AI agent development company: evaluation, integrations, security, and realistic delivery timelines.',
