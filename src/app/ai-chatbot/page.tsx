@@ -304,6 +304,59 @@ export default function AIChatbotPage() {
         </div>
       </section>
 
+      {/* Related Insights */}
+      <section className="py-20 px-6 bg-slate-900/50">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">Related Insights</h2>
+            <p className="text-slate-400 text-lg">
+              Practical notes on cost, implementation, and what &ldquo;production-ready&rdquo; actually means.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {
+              [
+                {
+                  title: 'AI Chatbot Development Cost (2026): What to Budget',
+                  desc: 'A realistic breakdown of cost drivers: data, integrations, evaluation, and ongoing ops.',
+                  href: '/insights/ai-chatbot-development-cost',
+                },
+                {
+                  title: 'AI Chatbot Development Services: What You Actually Get',
+                  desc: 'A checklist of deliverables that matter (and what to avoid when vendors oversell).',
+                  href: '/insights/ai-chatbot-development-services',
+                },
+                {
+                  title: 'ChatGPT Integration Services: Common Patterns That Work',
+                  desc: 'When to use RAG, function calling, safety guardrails, and human-in-the-loop approvals.',
+                  href: '/insights/chatgpt-integration-services',
+                },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group block rounded-2xl border border-slate-700 bg-slate-800/30 p-6 hover:bg-slate-800/50 transition"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-lg font-semibold group-hover:text-white">{item.title}</h3>
+                      <p className="mt-2 text-sm text-slate-400">{item.desc}</p>
+                    </div>
+                    <ArrowRight className="w-5 h-5 text-slate-500 group-hover:text-slate-200 transition" />
+                  </div>
+                </Link>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20">
         <div className="max-w-4xl mx-auto text-center">
