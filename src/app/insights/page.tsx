@@ -2,6 +2,20 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Chatbot Development Services: Roadmap, Cost, and Examples (2026)',
+    description:
+      'A practical guide to AI chatbot development services: architecture options (RAG, tools), project phases, realistic pricing, and a scope checklist.',
+    href: '/insights/ai-chatbot-development-services',
+    date: '2026-05-14',
+  },
+  {
+    title: 'ChatGPT Integration Services: What to Build + Implementation Checklist (2026)',
+    description:
+      'A practical guide to ChatGPT integration services: architecture, RAG, tool/function calling, security, evaluation, and a go-live checklist.',
+    href: '/insights/chatgpt-integration-services',
+    date: '2026-05-12',
+  },
+  {
     title: 'Custom AI Solutions: What to Build, Cost, and Examples (2026 Guide)',
     description:
       'A practical guide to choosing the right custom AI solution: where AI actually delivers ROI, typical costs, timelines, and real implementation patterns.',
