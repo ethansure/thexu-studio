@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Chatbot Development: A Practical Guide (2026)',
+    description:
+      'A practical guide to AI chatbot development: architecture options (RAG + tools), implementation steps, costs, and a checklist for shipping a production chatbot.',
+    href: '/insights/ai-chatbot-development',
+    date: '2026-05-16',
+  },
+  {
     title: 'AI Chatbot Development Services: Roadmap, Cost, and Examples (2026)',
     description:
       'A practical guide to AI chatbot development services: architecture options (RAG, tools), project phases, realistic pricing, and a scope checklist.',

@@ -328,9 +328,9 @@ export default function AIChatbotPage() {
                   href: '/insights/ai-chatbot-development-cost',
                 },
                 {
-                  title: 'AI Chatbot Development Services: What You Actually Get',
-                  desc: 'A checklist of deliverables that matter (and what to avoid when vendors oversell).',
-                  href: '/insights/ai-chatbot-development-services',
+                  title: 'AI Chatbot Development: A Practical Guide (2026)',
+                  desc: 'What a production chatbot really needs: RAG, tool calling, guardrails, and evaluation.',
+                  href: '/insights/ai-chatbot-development',
                 },
                 {
                   title: 'ChatGPT Integration Services: Common Patterns That Work',

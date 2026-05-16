@@ -57,6 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: 'https://thexustudio.com/insights/ai-chatbot-development',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
       url: 'https://thexustudio.com/insights/ai-agent-development-company',
       lastModified: new Date(),
       changeFrequency: 'monthly',
