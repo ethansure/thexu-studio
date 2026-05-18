@@ -32,6 +32,34 @@ const caseStudies = [
     roi: '6-month payback period'
   },
   {
+    id: 'lead-qualification-ai-agent',
+    href: '/case-studies/lead-qualification-ai-agent',
+    icon: Brain,
+    category: 'AI Agents',
+    title: 'AI Lead Qualification + Meeting Booking Agent',
+    client: 'B2B Services Company',
+    industry: 'Professional Services',
+    challenge:
+      'Inbound leads arrived from web forms, email, and LinkedIn. Follow-up was inconsistent, qualification criteria varied by rep, and the CRM was missing key fields needed for reporting.',
+    solution:
+      'We built an AI agent that enriches lead data, scores fit based on ICP rules, routes to the right owner, and books meetings automatically for high-intent leads—while escalating low-confidence cases to a human.',
+    implementation: [
+      'Week 1: ICP definition + scoring rubric + routing rules',
+      'Week 2-3: Integrations (CRM, Slack, email, calendar, web forms)',
+      'Week 4: Enrichment + validation + human-in-the-loop review flow',
+      'Week 5-6: QA, safety guardrails, analytics, and launch'
+    ],
+    results: [
+      { metric: 'Speed to Lead', before: '2 hours', after: '30 minutes', improvement: '4x faster' },
+      { metric: 'SQL Conversion', before: '18%', after: '23.6%', improvement: '+31%' },
+      { metric: 'Ops Time Saved', before: '0', after: '18 hrs/week', improvement: 'Freed for selling' },
+      { metric: 'CRM Completeness', before: 'Low', after: 'High', improvement: 'Cleaner pipeline' }
+    ],
+    investment: '$18,000 - $35,000',
+    timeline: '6 weeks',
+    roi: 'Improved conversion + faster sales cycle'
+  },
+  {
     id: 'workflow-automation',
     href: '/case-studies',
     icon: Zap,

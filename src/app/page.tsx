@@ -209,9 +209,9 @@ export default function Home() {
               },
               {
                 icon: Shield,
-                title: 'AI Strategy & Consulting',
-                description: 'Expert guidance on AI adoption. We help you identify opportunities, build roadmaps, and maximize ROI on AI investments.',
-                features: ['AI Readiness Assessment', 'Technology Selection', 'Implementation Planning']
+                title: 'AI Security & Governance',
+                description: 'Secure agentic workflows with least-privilege permissions, audit logs, and MCP/Kubernetes hardening—aligned with emerging NIST guidance and SOC2 expectations.',
+                features: ['Least-Privilege Access', 'Audit Logs & Approvals', 'MCP / K8s Hardening']
               }
             ].map((service, i) => (
               <motion.div

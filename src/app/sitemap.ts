@@ -39,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://thexustudio.com/case-studies/lead-qualification-ai-agent',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://thexustudio.com/chatgpt-integration',
       lastModified: new Date(),
       changeFrequency: 'weekly',

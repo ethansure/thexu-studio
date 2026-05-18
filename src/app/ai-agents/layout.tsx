@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AI Agent Development & Optimization | Custom AI Agents | Xu Studio",
-  description: "Build intelligent AI agents for your business. Custom AI agent development, agent optimization, multi-agent systems, and autonomous workflow automation. Free consultation.",
+  description: "Build production AI agents for your business—tool-using workflows with guardrails: least-privilege permissions, audit logs, approvals, and secure MCP integrations. Custom development and optimization. Free consultation.",
   keywords: [
     "AI agent development",
     "custom AI agents",
@@ -12,6 +12,13 @@ export const metadata: Metadata = {
     "AI assistant development",
     "multi-agent systems",
     "AI agent consulting",
+    "agent security",
+    "AI governance",
+    "least privilege",
+    "audit logs",
+    "human in the loop",
+    "MCP",
+    "Model Context Protocol",
     "LLM agents",
     "GPT agents",
     "Claude agents",
@@ -27,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://thexustudio.com/ai-agents",
     siteName: "Xu Studio",
     title: "AI Agent Development & Optimization | Xu Studio",
-    description: "Build intelligent AI agents for your business. Custom development, optimization, and multi-agent systems.",
+    description: "Build production AI agents with guardrails: least-privilege permissions, audit logs, approvals, and secure MCP integrations.",
     images: [
       {
         url: "/og-image.png",
@@ -40,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AI Agent Development & Optimization | Xu Studio",
-    description: "Build intelligent AI agents for your business. Custom development, optimization, and multi-agent systems.",
+    description: "Build production AI agents with guardrails: least-privilege permissions, audit logs, approvals, and secure MCP integrations.",
     images: ["/og-image.png"],
   },
   alternates: {
