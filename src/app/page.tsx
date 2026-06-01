@@ -25,11 +25,11 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    
+
     try {
       const response = await fetch('https://formsubmit.co/ajax/contact@thexustudio.com', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
@@ -41,7 +41,7 @@ export default function Home() {
           _subject: `New Contact from ${formData.name} - Xu Studio Website`
         })
       });
-      
+
       const data = await response.json();
       if (data.success) {
         setStatus('success');
@@ -84,21 +84,21 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center max-w-4xl mx-auto"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.div 
+            <motion.div
               variants={fadeInUp}
               className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 px-4 py-2 rounded-full mb-8"
             >
               <Sparkles className="w-4 h-4 text-purple-400" />
               <span className="text-sm text-slate-300">AI-Powered Solutions for Modern Businesses</span>
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               variants={fadeInUp}
               className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
             >
@@ -107,25 +107,25 @@ export default function Home() {
                 Artificial Intelligence
               </span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               variants={fadeInUp}
               className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto"
             >
-              We help businesses harness the power of AI through custom integrations, 
+              We help businesses harness the power of AI through custom integrations,
               LLM solutions, and intelligent software development.
             </motion.p>
-            
+
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition"
               >
                 Start Your AI Journey
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a 
-                href="#services" 
+              <a
+                href="#services"
                 className="inline-flex items-center justify-center gap-2 bg-slate-800 border border-slate-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-slate-700 transition"
               >
                 Explore Services
@@ -134,7 +134,7 @@ export default function Home() {
           </motion.div>
 
           {/* Stats */}
-          <motion.div 
+          <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -160,7 +160,7 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-20 px-6 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -177,7 +177,7 @@ export default function Home() {
               {
                 icon: Bot,
                 title: 'AI Chatbot Development',
-                description: 'Build reliable AI chatbots for support, lead capture, and internal knowledge—production-grade guardrails, analytics, and integrations.',
+                description: 'Build reliable AI chatbots for support, lead capture, and internal knowledge-production-grade guardrails, analytics, and integrations.',
                 features: ['RAG Knowledge Base', 'Multi-Channel Support', 'Human Handoff'],
                 href: '/ai-chatbot'
               },
@@ -210,7 +210,7 @@ export default function Home() {
               {
                 icon: Shield,
                 title: 'AI Security & Governance',
-                description: 'Secure agentic workflows with least-privilege permissions, audit logs, and MCP/Kubernetes hardening—aligned with emerging NIST guidance and SOC2 expectations.',
+                description: 'Secure agentic workflows with least-privilege permissions, audit logs, and MCP/Kubernetes hardening-aligned with emerging NIST guidance and SOC2 expectations.',
                 features: ['Least-Privilege Access', 'Audit Logs & Approvals', 'MCP / K8s Hardening']
               }
             ].map((service, i) => (
@@ -247,6 +247,90 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Resources / Internal Links */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Popular Resources</h2>
+            <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+              Explore implementation guides and real case studies. These pages are designed to help you evaluate fit fast-and help search engines understand our topical coverage.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-8">
+              <div className="flex items-center justify-between gap-6 mb-6">
+                <h3 className="text-2xl font-bold">Insights</h3>
+                <Link href="/insights" className="text-slate-300 hover:text-white transition inline-flex items-center gap-2">
+                  View all
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  {
+                    title: 'AI Chatbot Development (2026 Guide)',
+                    href: '/insights/ai-chatbot-development'
+                  },
+                  {
+                    title: 'AI Agent Development Company: How to Choose + Checklist',
+                    href: '/insights/ai-agent-development-company'
+                  },
+                  {
+                    title: 'ChatGPT Integration Services: Checklist + Examples',
+                    href: '/insights/chatgpt-integration-services'
+                  },
+                  {
+                    title: 'Custom AI Solutions: What to Build + Cost',
+                    href: '/insights/custom-ai-solutions'
+                  }
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="block rounded-xl border border-slate-700 bg-slate-900/40 p-4 hover:bg-slate-900/60 transition">
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="font-semibold">{item.title}</span>
+                        <ArrowRight className="w-4 h-4 text-slate-400" />
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-8">
+              <div className="flex items-center justify-between gap-6 mb-6">
+                <h3 className="text-2xl font-bold">Case Studies</h3>
+                <Link href="/case-studies" className="text-slate-300 hover:text-white transition inline-flex items-center gap-2">
+                  View all
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  {
+                    title: 'E-commerce Support Chatbot (RAG + Human Handoff)',
+                    href: '/case-studies/ecommerce-chatbot'
+                  },
+                  {
+                    title: 'Lead Qualification AI Agent (Calendly + CRM Sync)',
+                    href: '/case-studies/lead-qualification-ai-agent'
+                  }
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="block rounded-xl border border-slate-700 bg-slate-900/40 p-4 hover:bg-slate-900/60 transition">
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="font-semibold">{item.title}</span>
+                        <ArrowRight className="w-4 h-4 text-slate-400" />
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -260,13 +344,13 @@ export default function Home() {
                 Building the Future with AI
               </h2>
               <p className="text-slate-400 text-lg mb-6">
-                Xu Studio LLC is a boutique AI development firm dedicated to helping businesses 
-                leverage cutting-edge artificial intelligence technologies. We believe AI should 
+                Xu Studio LLC is a boutique AI development firm dedicated to helping businesses
+                leverage cutting-edge artificial intelligence technologies. We believe AI should
                 be accessible, practical, and transformative.
               </p>
               <p className="text-slate-400 text-lg mb-8">
-                Our team combines deep technical expertise with business acumen to deliver 
-                solutions that drive real results. From startups to enterprises, we&apos;ve helped 
+                Our team combines deep technical expertise with business acumen to deliver
+                solutions that drive real results. From startups to enterprises, we&apos;ve helped
                 organizations across industries unlock the power of AI.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -283,7 +367,7 @@ export default function Home() {
                 ))}
               </div>
             </motion.div>
-            
+
             <motion.div
               className="relative"
               initial={{ opacity: 0, x: 20 }}
@@ -319,11 +403,11 @@ export default function Home() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-slate-300 text-lg mb-8">
-              Let&apos;s discuss how AI can solve your challenges and drive growth. 
+              Let&apos;s discuss how AI can solve your challenges and drive growth.
               Book a free consultation today.
             </p>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-slate-100 transition"
             >
               Schedule a Call
@@ -346,10 +430,10 @@ export default function Home() {
                 Get in Touch
               </h2>
               <p className="text-slate-400 text-lg mb-8">
-                Have a project in mind or want to learn more about how AI can help your business? 
+                Have a project in mind or want to learn more about how AI can help your business?
                 We&apos;d love to hear from you. Fill out the form and we&apos;ll get back to you within 24 hours.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4 text-lg">
                   <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
@@ -384,7 +468,7 @@ export default function Home() {
                 </ul>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -395,7 +479,7 @@ export default function Home() {
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
                   <p className="text-slate-400 mb-6">Thank you for reaching out. We&apos;ll get back to you within 24 hours.</p>
-                  <button 
+                  <button
                     onClick={() => setStatus('idle')}
                     className="text-purple-400 hover:text-purple-300 transition"
                   >
@@ -407,7 +491,7 @@ export default function Home() {
                   <div className="space-y-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">Name</label>
-                      <input 
+                      <input
                         type="text"
                         required
                         value={formData.name}
@@ -418,7 +502,7 @@ export default function Home() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Email</label>
-                      <input 
+                      <input
                         type="email"
                         required
                         value={formData.email}
@@ -429,7 +513,7 @@ export default function Home() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Company (Optional)</label>
-                      <input 
+                      <input
                         type="text"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -439,7 +523,7 @@ export default function Home() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Message</label>
-                      <textarea 
+                      <textarea
                         rows={4}
                         required
                         value={formData.message}
@@ -451,7 +535,7 @@ export default function Home() {
                     {status === 'error' && (
                       <p className="text-red-400 text-sm">Something went wrong. Please try again.</p>
                     )}
-                    <button 
+                    <button
                       type="submit"
                       disabled={status === 'loading'}
                       className="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-4 rounded-xl font-semibold hover:opacity-90 transition disabled:opacity-50 flex items-center justify-center gap-2"

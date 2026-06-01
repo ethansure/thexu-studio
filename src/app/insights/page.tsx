@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Automation Services: What to Automate + ROI Playbook (2026)',
+    description:
+      'A practical guide to AI automation services: what to automate first, architecture patterns (RAG + tools + agents), timelines, pricing, and an ROI-focused delivery checklist.',
+    href: '/insights/ai-automation-services',
+    date: '2026-06-01',
+  },
+  {
     title: 'AI Chatbot Development: A Practical Guide (2026)',
     description:
       'A practical guide to AI chatbot development: architecture options (RAG + tools), implementation steps, costs, and a checklist for shipping a production chatbot.',
