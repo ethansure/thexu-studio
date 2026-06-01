@@ -168,7 +168,7 @@ export default function Home() {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              Comprehensive AI solutions tailored to your business needs
+              AI agents, voice automation, and production workflows tailored to your business
             </p>
           </motion.div>
 
@@ -184,7 +184,7 @@ export default function Home() {
               {
                 icon: Zap,
                 title: 'AI Workflow Automation',
-                description: 'Ship production AI automations with n8n / Make / Zapier: route leads, process documents, and run agent workflows with logs, safety checks, and MCP integrations.',
+                description: 'Ship production AI automations with n8n / Make / Zapier: route leads, process documents, sync CRM, and run agent workflows with logs, approvals, and MCP integrations.',
                 features: ['n8n / Make / Zapier', 'MCP Tool Calling', 'Observability & QA'],
                 href: '/ai-automation'
               },
@@ -204,8 +204,8 @@ export default function Home() {
               {
                 icon: MessageSquare,
                 title: 'AI Voice Agents',
-                description: 'Deploy intelligent voice AI for calls, appointments, and customer service. 24/7 phone support that sounds natural and handles complex conversations.',
-                features: ['Inbound/Outbound Calls', 'Appointment Scheduling', 'Natural Conversations']
+                description: 'Deploy AI voice agents for calls, appointments, and customer service. Build an always-on AI receptionist with Vapi/Retell/Twilio, CRM sync, and safe human handoff.',
+                features: ['AI Receptionist (24/7)', 'Appointment Booking + CRM', 'Human Handoff & Compliance']
               },
               {
                 icon: Shield,

@@ -11,8 +11,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://thexustudio.com'),
   title: "AI Chatbot & Agent Development | Custom AI Solutions | Xu Studio",
-  description: "Build AI chatbots, agents, and workflow automation for your business. RAG knowledge bases, MCP integrations, and n8n / Make / Zapier automations with GPT-4 & Claude. Free consultation.",
-  keywords: ["AI chatbot development", "AI agent development", "custom AI chatbot", "AI automation services", "AI workflow automation", "RAG knowledge base", "AI knowledge base chatbot", "MCP integrations", "Model Context Protocol", "n8n automation", "Make.com automation", "Zapier automation", "ChatGPT integration", "Claude AI integration", "AI voice agent", "voice AI development", "AI phone agent", "business AI solutions", "LLM development", "AI consulting", "build AI agent", "AI chatbot for business", "enterprise AI", "AI integration services", "custom AI solutions"],
+  description: "Build AI agents, chatbots, and workflow automation for your business. RAG knowledge bases, MCP integrations, and n8n / Make / Zapier automations—plus AI voice agents (AI receptionist) with Vapi/Retell/Twilio. Free consultation.",
+  keywords: ["AI chatbot development", "AI agent development", "custom AI chatbot", "AI automation services", "AI workflow automation", "agentic workflows", "RAG knowledge base", "AI knowledge base chatbot", "MCP integrations", "Model Context Protocol", "n8n automation", "Make.com automation", "Zapier automation", "GoHighLevel automation", "HubSpot automation", "Salesforce automation", "ChatGPT integration", "Claude AI integration", "AI voice agent", "AI receptionist", "AI phone agent", "Retell AI", "Vapi", "Twilio", "appointment booking automation", "lead outreach agent", "business AI solutions", "LLM development", "AI consulting", "build AI agent", "AI chatbot for business", "AI integration services", "custom AI solutions"],
   authors: [{ name: "Xu Studio LLC" }],
   creator: "Xu Studio LLC",
   openGraph: {
