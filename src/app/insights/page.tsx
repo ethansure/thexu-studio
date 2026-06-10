@@ -97,6 +97,33 @@ export default function InsightsIndexPage() {
           </p>
         </header>
 
+        <section className="mt-10 rounded-2xl border border-slate-800 bg-slate-900/40 p-6">
+          <h2 className="text-xl font-semibold">Service hubs</h2>
+          <p className="mt-2 text-slate-400">
+            Start with a core service page, then use the guides below to scope the implementation.
+          </p>
+          <div className="mt-5 grid gap-3 md:grid-cols-3">
+            <Link
+              href="/ai-chatbot"
+              className="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-slate-200 transition hover:border-blue-500/60 hover:text-white"
+            >
+              AI Chatbot Development
+            </Link>
+            <Link
+              href="/ai-agents"
+              className="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-slate-200 transition hover:border-blue-500/60 hover:text-white"
+            >
+              AI Agent Development
+            </Link>
+            <Link
+              href="/ai-automation"
+              className="rounded-xl border border-slate-800 bg-slate-950/60 p-4 text-slate-200 transition hover:border-blue-500/60 hover:text-white"
+            >
+              AI Automation Services
+            </Link>
+          </div>
+        </section>
+
         <section className="mt-12 grid gap-6">
           {posts.map((post) => (
             <Link
