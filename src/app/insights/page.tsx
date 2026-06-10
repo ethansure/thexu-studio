@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Chatbot for Business: Use Cases, ROI, and Build Plan (2026)',
+    description:
+      'A practical guide to building an AI chatbot for business: high-ROI use cases, architecture, integrations, costs, risks, and a launch checklist for production AI chatbot development.',
+    href: '/insights/ai-chatbot-for-business',
+    date: '2026-06-10',
+  },
+  {
     title: 'AI Automation Services: What to Automate + ROI Playbook (2026)',
     description:
       'A practical guide to AI automation services: what to automate first, architecture patterns (RAG + tools + agents), timelines, pricing, and an ROI-focused delivery checklist.',

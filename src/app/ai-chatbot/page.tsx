@@ -333,9 +333,9 @@ export default function AIChatbotPage() {
                   href: '/insights/ai-chatbot-development',
                 },
                 {
-                  title: 'ChatGPT Integration Services: Common Patterns That Work',
-                  desc: 'When to use RAG, function calling, safety guardrails, and human-in-the-loop approvals.',
-                  href: '/insights/chatgpt-integration-services',
+                  title: 'AI Chatbot for Business: Use Cases, ROI, and Build Plan',
+                  desc: 'How to choose the first high-ROI chatbot workflow and launch with measurable outcomes.',
+                  href: '/insights/ai-chatbot-for-business',
                 },
               ].map((item) => (
                 <Link
