@@ -269,8 +269,8 @@ export default function Home() {
               <ul className="space-y-4">
                 {[
                   {
-                    title: 'AI Chatbot Development (2026 Guide)',
-                    href: '/insights/ai-chatbot-development'
+                    title: 'AI Chatbot for Business: Use Cases + ROI',
+                    href: '/insights/ai-chatbot-for-business'
                   },
                   {
                     title: 'AI Agent Development Company: How to Choose + Checklist',
