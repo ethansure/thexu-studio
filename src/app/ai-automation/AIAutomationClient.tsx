@@ -359,6 +359,9 @@ export default function AIAutomationClient() {
               <Link href="/insights/ai-agent-development-company" className="text-slate-200 hover:text-white transition">
                 How to choose an AI agent development company (2026 checklist)
               </Link>
+              <Link href="/insights/ai-chatbot-for-business" className="text-slate-200 hover:text-white transition">
+                AI chatbot for business: use cases, ROI, and build plan
+              </Link>
               <Link href="/insights/chatgpt-integration-services" className="text-slate-200 hover:text-white transition">
                 ChatGPT integration services implementation checklist (2026)
               </Link>
