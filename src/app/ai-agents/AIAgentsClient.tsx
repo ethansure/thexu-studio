@@ -303,6 +303,21 @@ export default function AIAgentsClient() {
               If you&apos;re comparing vendors, this checklist covers what matters in production: evaluation,
               security, integrations, and realistic timelines.
             </p>
+            <div className="mt-6 grid gap-3 md:grid-cols-2">
+              {[
+                'Offline evaluation set before launch',
+                'Least-privilege tool permissions',
+                'Audit logs for every agent action',
+                'Human approval for high-risk steps',
+                'CRM, support, and calendar integrations',
+                'Weekly quality and cost review loop',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 rounded-xl border border-slate-800 bg-slate-950/60 p-4">
+                  <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-400" />
+                  <span className="text-sm text-slate-300">{item}</span>
+                </div>
+              ))}
+            </div>
             <div className="mt-6">
               <Link
                 href="/insights/ai-agent-development-company"
@@ -356,6 +371,9 @@ export default function AIAgentsClient() {
               <Link href="/insights/ai-agent-development-company" className="text-slate-200 hover:text-white transition">
                 How to choose an AI agent development company (2026 checklist)
               </Link>
+              <Link href="/insights/ai-automation-services" className="text-slate-200 hover:text-white transition">
+                AI automation services ROI playbook
+              </Link>
               <Link href="/insights/ai-chatbot-development" className="text-slate-200 hover:text-white transition">
                 AI chatbot development (2026 guide)
               </Link>
@@ -401,4 +419,3 @@ export default function AIAgentsClient() {
     </div>
   );
 }
-
