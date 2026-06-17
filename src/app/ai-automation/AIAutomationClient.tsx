@@ -353,6 +353,9 @@ export default function AIAutomationClient() {
             <h3 className="text-2xl font-bold mb-2">Related Insights</h3>
             <p className="text-slate-400 mb-5">Practical guides on building production AI workflows.</p>
             <div className="flex flex-col gap-3">
+              <Link href="/insights/ai-automation-services" className="text-slate-200 hover:text-white transition">
+                AI automation services: what to automate + ROI playbook
+              </Link>
               <Link href="/case-studies/lead-qualification-ai-agent" className="text-slate-200 hover:text-white transition">
                 Case study: Lead qualification + meeting booking AI agent
               </Link>
