@@ -136,6 +136,34 @@ export default function LeadQualificationAIAgentCaseStudyPage() {
           </ul>
         </section>
 
+        <section className="rounded-2xl border border-slate-800 bg-slate-900/20 p-7 mt-10">
+          <h2 className="text-xl font-semibold">Related AI Agent Guides</h2>
+          <p className="text-slate-300 mt-3">
+            Use these implementation guides to compare AI agent development, AI automation services,
+            and custom AI solutions before building a sales operations workflow.
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 mt-5">
+            <Link
+              href="/insights/ai-agent-development-company"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Agent Development Company
+            </Link>
+            <Link
+              href="/insights/ai-automation-services"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Automation Services
+            </Link>
+            <Link
+              href="/insights/custom-ai-solutions"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              Custom AI Solutions
+            </Link>
+          </div>
+        </section>
+
         <section className="rounded-2xl border border-slate-800 bg-gradient-to-r from-blue-600/15 via-purple-600/15 to-pink-600/15 p-7 mt-10">
           <h2 className="text-2xl font-bold">Want an AI agent that drives revenue?</h2>
           <p className="text-slate-300 mt-3">
@@ -166,4 +194,3 @@ export default function LeadQualificationAIAgentCaseStudyPage() {
     </main>
   );
 }
-

@@ -133,6 +133,34 @@ export default function EcommerceChatbotCaseStudyPage() {
           </ul>
         </section>
 
+        <section className="rounded-2xl border border-slate-800 bg-slate-900/20 p-7 mt-10">
+          <h2 className="text-xl font-semibold">Related AI Chatbot Guides</h2>
+          <p className="text-slate-300 mt-3">
+            Planning a similar customer support automation project? These guides explain the cost,
+            architecture, and rollout decisions behind a production AI chatbot for business.
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 mt-5">
+            <Link
+              href="/insights/ai-chatbot-development-cost"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Chatbot Development Cost
+            </Link>
+            <Link
+              href="/insights/ai-chatbot-development"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Chatbot Development Guide
+            </Link>
+            <Link
+              href="/insights/ai-chatbot-for-business"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Chatbot for Business
+            </Link>
+          </div>
+        </section>
+
         <section className="rounded-2xl border border-slate-800 bg-gradient-to-r from-blue-600/15 via-purple-600/15 to-pink-600/15 p-7 mt-10">
           <h2 className="text-2xl font-bold">Want to replicate these results?</h2>
           <p className="text-slate-300 mt-3">
@@ -164,4 +192,3 @@ export default function EcommerceChatbotCaseStudyPage() {
     </main>
   );
 }
-
