@@ -227,6 +227,18 @@ export default function PostPage() {
           </ul>
         </Section>
 
+        <Section title="Proof to review next">
+          <p>
+            If you are comparing chatbot vendors, review a concrete support automation example before the first scoping
+            call. Our{' '}
+            <Link className="underline hover:text-white" href="/case-studies/ecommerce-chatbot">
+              e-commerce AI chatbot case study
+            </Link>{' '}
+            shows the implementation path, support metrics, and customer experience outcomes that a production chatbot
+            should be measured against.
+          </p>
+        </Section>
+
         <div className="mt-14 rounded-2xl border border-slate-800 bg-slate-900/40 p-7">
           <h2 className="text-2xl font-bold">Want us to scope your chatbot?</h2>
           <p className="mt-2 text-slate-400">
@@ -252,4 +264,3 @@ export default function PostPage() {
     </div>
   )
 }
-

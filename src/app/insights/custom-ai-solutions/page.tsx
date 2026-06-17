@@ -211,6 +211,20 @@ export default function PostPage() {
           </ol>
         </Section>
 
+        <Section title="Proof to review next">
+          <p>
+            Custom AI buyers should compare use cases against shipped workflow examples. Start with the{' '}
+            <Link className="underline hover:text-white" href="/case-studies/lead-qualification-ai-agent">
+              AI lead qualification agent case study
+            </Link>{' '}
+            for CRM routing and meeting-booking automation, then review the{' '}
+            <Link className="underline hover:text-white" href="/case-studies/ecommerce-chatbot">
+              e-commerce chatbot case study
+            </Link>{' '}
+            for support automation, RAG, and customer-facing chatbot ROI.
+          </p>
+        </Section>
+
         <div className="mt-14 rounded-2xl border border-slate-800 bg-slate-900/40 p-7">
           <h2 className="text-2xl font-bold">Want a custom AI solution scoped this week?</h2>
           <p className="mt-2 text-slate-400">
@@ -236,4 +250,3 @@ export default function PostPage() {
     </div>
   )
 }
-
