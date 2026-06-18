@@ -264,6 +264,26 @@ export default function ChatGPTIntegrationClient() {
           </div>
 
           <div className="mt-14 text-center flex flex-col items-center gap-4">
+            <div className="max-w-3xl w-full bg-slate-950/50 border border-slate-700 rounded-2xl p-6 text-left">
+              <h3 className="text-2xl font-bold mb-2">Related ChatGPT Integration Resources</h3>
+              <p className="text-slate-400 mb-5">
+                Compare implementation details, chatbot build plans, automation patterns, and proof from shipped AI systems.
+              </p>
+              <div className="grid md:grid-cols-2 gap-3">
+                <Link href="/case-studies/ecommerce-chatbot" className="text-slate-200 hover:text-white transition">
+                  Ecommerce chatbot case study
+                </Link>
+                <Link href="/insights/ai-chatbot-development" className="text-slate-200 hover:text-white transition">
+                  AI chatbot development guide
+                </Link>
+                <Link href="/insights/ai-automation-services" className="text-slate-200 hover:text-white transition">
+                  AI automation services ROI playbook
+                </Link>
+                <Link href="/insights/custom-ai-solutions" className="text-slate-200 hover:text-white transition">
+                  Custom AI solutions build guide
+                </Link>
+              </div>
+            </div>
             <Link
               href="/insights/chatgpt-integration-services"
               className="text-slate-300 hover:text-white transition text-sm"
@@ -283,4 +303,3 @@ export default function ChatGPTIntegrationClient() {
     </div>
   )
 }
-
