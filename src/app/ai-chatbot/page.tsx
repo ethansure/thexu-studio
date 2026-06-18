@@ -319,9 +319,14 @@ export default function AIChatbotPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {
               [
+                {
+                  title: 'AI Lead Generation Chatbot: Qualification + Booking Playbook',
+                  desc: 'How to qualify inbound visitors, sync CRM fields, and book meetings while prospects are warm.',
+                  href: '/insights/ai-lead-generation-chatbot',
+                },
                 {
                   title: 'AI Chatbot Development Cost (2026): What to Budget',
                   desc: 'A realistic breakdown of cost drivers: data, integrations, evaluation, and ongoing ops.',

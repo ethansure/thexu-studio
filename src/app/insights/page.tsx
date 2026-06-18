@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Lead Generation Chatbot: Qualification + Booking Playbook (2026)',
+    description:
+      'A practical guide to AI lead generation chatbots: qualify inbound visitors, enrich accounts, sync CRM fields, book meetings, and measure pipeline impact.',
+    href: '/insights/ai-lead-generation-chatbot',
+    date: '2026-06-18',
+  },
+  {
     title: 'AI Chatbot for Business: Use Cases, ROI, and Build Plan (2026)',
     description:
       'A practical guide to building an AI chatbot for business: high-ROI use cases, architecture, integrations, costs, risks, and a launch checklist for production AI chatbot development.',
