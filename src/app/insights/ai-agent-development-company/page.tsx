@@ -150,6 +150,12 @@ export default function PostPage() {
               >
                 ChatGPT Integration
               </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/case-studies/lead-qualification-ai-agent"
+              >
+                Lead qualification AI agent case study
+              </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/#contact">
                 Talk to an engineer
               </Link>
