@@ -20,9 +20,110 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
+const FAQ_ITEMS = [
+  {
+    q: 'What is the difference between an AI chatbot and an AI agent?',
+    a: 'A chatbot primarily focuses on conversation (answering questions and guiding users). An AI agent can also plan and execute multi-step actions using tools/APIs (e.g., creating tickets, updating CRM, pulling reports).',
+  },
+  {
+    q: 'Can the chatbot use our internal documents safely?',
+    a: 'Yes. We typically use a Retrieval-Augmented Generation (RAG) setup with permissioning, redaction where needed, and audit logs—so answers are grounded in approved sources.',
+  },
+  {
+    q: 'How do you prevent hallucinations?',
+    a: 'We combine strong retrieval, answer constraints (cite sources), evaluation tests, and guardrails that trigger fallback to a human when confidence is low.',
+  },
+  {
+    q: 'How long does an AI chatbot project take?',
+    a: 'Most MVP deployments take 2–6 weeks depending on data readiness, integrations, and the number of intents/workflows.',
+  },
+];
+
 export default function AIChatbotPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        name: 'Xu Studio',
+        url: 'https://thexustudio.com',
+      },
+      {
+        '@type': 'Service',
+        name: 'AI Chatbot Development Services',
+        serviceType: 'AI chatbot development',
+        provider: {
+          '@type': 'Organization',
+          name: 'Xu Studio',
+          url: 'https://thexustudio.com',
+        },
+        areaServed: 'Worldwide',
+        url: 'https://thexustudio.com/ai-chatbot',
+        description:
+          'Production-grade AI chatbot development for customer support, lead qualification, internal knowledge, RAG, tool calling, analytics, and human handoff.',
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'AI chatbot development workflows',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Customer support chatbot',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Lead qualification chatbot',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Internal knowledge assistant',
+              },
+            },
+          ],
+        },
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: FAQ_ITEMS.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.a,
+          },
+        })),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://thexustudio.com/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'AI Chatbot Development Services',
+            item: 'https://thexustudio.com/ai-chatbot',
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -277,24 +378,7 @@ export default function AIChatbotPage() {
           </motion.div>
 
           <div className="space-y-4">
-            {[
-              {
-                q: 'What is the difference between an AI chatbot and an AI agent?',
-                a: 'A chatbot primarily focuses on conversation (answering questions and guiding users). An AI agent can also plan and execute multi-step actions using tools/APIs (e.g., creating tickets, updating CRM, pulling reports).',
-              },
-              {
-                q: 'Can the chatbot use our internal documents safely?',
-                a: 'Yes. We typically use a Retrieval-Augmented Generation (RAG) setup with permissioning, redaction where needed, and audit logs—so answers are grounded in approved sources.',
-              },
-              {
-                q: 'How do you prevent hallucinations?',
-                a: 'We combine strong retrieval, answer constraints (cite sources), evaluation tests, and guardrails that trigger fallback to a human when confidence is low.',
-              },
-              {
-                q: 'How long does an AI chatbot project take?',
-                a: 'Most MVP deployments take 2–6 weeks depending on data readiness, integrations, and the number of intents/workflows.',
-              },
-            ].map((item) => (
+            {FAQ_ITEMS.map((item) => (
               <div key={item.q} className="bg-slate-800/30 border border-slate-700 rounded-xl p-6">
                 <h3 className="font-bold mb-2">{item.q}</h3>
                 <p className="text-slate-400">{item.a}</p>
