@@ -21,6 +21,23 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export default function PostPage() {
   const postUrl = 'https://thexustudio.com/insights/ai-agent-development-company'
+  const faqItems = [
+    {
+      question: 'What should I ask an AI agent development company before hiring them?',
+      answer:
+        'Ask how they define the agent scope, what tools and data the agent can access, how they evaluate outputs before launch, and how risky actions are approved or escalated to a human.',
+    },
+    {
+      question: 'How long does a production AI agent project usually take?',
+      answer:
+        'A focused pilot can often be validated in 2 to 4 weeks, but production rollout usually needs additional time for integrations, evaluation sets, security review, monitoring, and post-launch tuning.',
+    },
+    {
+      question: 'What is the difference between an AI agent and workflow automation?',
+      answer:
+        'Workflow automation follows predefined rules. An AI agent can interpret requests, choose from approved tools, retrieve business context, and decide the next step within guardrails.',
+    },
+  ]
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -31,7 +48,7 @@ export default function PostPage() {
         description:
           'A practical checklist for choosing an AI agent development company: architecture, integrations, evaluation, security, and what a realistic delivery timeline looks like.',
         datePublished: '2026-05-10',
-        dateModified: '2026-05-10',
+        dateModified: '2026-06-19',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -70,6 +87,17 @@ export default function PostPage() {
             item: postUrl,
           },
         ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer,
+          },
+        })),
       },
     ],
   }
@@ -220,6 +248,17 @@ export default function PostPage() {
           </p>
         </Section>
 
+        <Section title="FAQ: Choosing an AI agent development company">
+          <div className="space-y-6">
+            {faqItems.map((item) => (
+              <div key={item.question}>
+                <h3 className="text-xl font-semibold text-white">{item.question}</h3>
+                <p className="mt-2">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+
         <Section title="Next step: send a 1-page brief">
           <p>
             If you want a fast, accurate estimate, send us: your top 25 user requests, the systems the agent must
@@ -253,4 +292,3 @@ export default function PostPage() {
     </div>
   )
 }
-
