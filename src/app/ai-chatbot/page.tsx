@@ -426,6 +426,11 @@ export default function AIChatbotPage() {
                   desc: 'How to choose the first high-ROI chatbot workflow and launch with measurable outcomes.',
                   href: '/insights/ai-chatbot-for-business',
                 },
+                {
+                  title: 'ChatGPT Integration Services: Implementation Checklist',
+                  desc: 'How to connect RAG, tool calling, CRM/helpdesk actions, evaluation, and monitoring.',
+                  href: '/insights/chatgpt-integration-services',
+                },
               ].map((item) => (
                 <Link
                   key={item.href}
