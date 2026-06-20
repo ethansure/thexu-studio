@@ -319,6 +319,54 @@ export default function AIAutomationClient() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">AI Automation FAQ</h2>
+            <p className="text-slate-400 text-lg">
+              Short answers for teams scoping their first production AI workflow.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            {[
+              {
+                question: 'What should we automate first with AI?',
+                answer:
+                  'Start with repetitive workflows that have clear inputs, clear success metrics, and a human approval path. Good first projects include lead routing, support triage, document intake, CRM cleanup, and internal SOP assistants.',
+              },
+              {
+                question: 'How long does an AI automation project take?',
+                answer:
+                  'A narrow AI automation MVP usually takes two to three weeks. Production rollout with integrations, permissions, audit logs, monitoring, and human-in-the-loop review usually takes four to eight weeks.',
+              },
+              {
+                question: 'How do you keep AI automations safe?',
+                answer:
+                  'Production AI automations need least-privilege tool access, input validation, audit logs, rollback paths, PII controls, prompt-injection defenses, and explicit human approval for sensitive actions.',
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.question}
+                className="rounded-2xl border border-slate-700 bg-slate-800/40 p-6"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-bold mb-3">{item.question}</h3>
+                <p className="text-slate-400 leading-relaxed">{item.answer}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Internal links */}
       <section className="py-12 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-6">

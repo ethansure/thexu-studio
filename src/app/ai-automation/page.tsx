@@ -42,6 +42,35 @@ export default function AIAutomationPage() {
         serviceType: 'AI workflow automation',
         url: pageUrl,
       },
+      {
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'What should we automate first with AI?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Start with repetitive workflows that have clear inputs, clear success metrics, and a human approval path. Good first projects include lead routing, support triage, document intake, CRM cleanup, and internal SOP assistants.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'How long does an AI automation project take?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'A narrow AI automation MVP usually takes two to three weeks. Production rollout with integrations, permissions, audit logs, monitoring, and human-in-the-loop review usually takes four to eight weeks.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'How do you keep AI automations safe?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Production AI automations need least-privilege tool access, input validation, audit logs, rollback paths, PII controls, prompt-injection defenses, and explicit human approval for sensitive actions.',
+            },
+          },
+        ],
+      },
     ],
   }
 
