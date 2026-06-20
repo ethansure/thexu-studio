@@ -250,7 +250,12 @@ export default function PostPage() {
             </li>
           </ol>
           <p className="mt-4">
-            Teams that promise “fully autonomous agents in a week” are usually skipping evaluation and safety.
+            Teams that promise “fully autonomous agents in a week” are usually skipping evaluation and safety. For a
+            deeper budget breakdown, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-agent-development-cost">
+              AI agent development cost guide
+            </Link>{' '}
+            before you compare vendor estimates.
           </p>
         </Section>
 

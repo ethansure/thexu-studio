@@ -371,6 +371,9 @@ export default function AIAgentsClient() {
               <Link href="/insights/ai-agent-development-company" className="text-slate-200 hover:text-white transition">
                 How to choose an AI agent development company (2026 checklist)
               </Link>
+              <Link href="/insights/ai-agent-development-cost" className="text-slate-200 hover:text-white transition">
+                AI agent development cost, timeline, and ROI guide
+              </Link>
               <Link href="/insights/ai-automation-services" className="text-slate-200 hover:text-white transition">
                 AI automation services ROI playbook
               </Link>

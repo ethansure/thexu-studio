@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Agent Development Cost: Budget, Timeline, and ROI (2026)',
+    description:
+      'A practical guide to AI agent development cost: project types, budget drivers, timelines, integrations, evaluation, security, and ROI planning for production AI agents.',
+    href: '/insights/ai-agent-development-cost',
+    date: '2026-06-20',
+  },
+  {
     title: 'AI Lead Generation Chatbot: Qualification + Booking Playbook (2026)',
     description:
       'A practical guide to AI lead generation chatbots: qualify inbound visitors, enrich accounts, sync CRM fields, book meetings, and measure pipeline impact.',
