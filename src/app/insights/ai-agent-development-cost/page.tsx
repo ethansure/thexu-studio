@@ -49,7 +49,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI agent development cost: what drives budget, realistic timelines, integration scope, evaluation, security, and ROI planning for production AI agents.',
         datePublished: '2026-06-20',
-        dateModified: '2026-06-20',
+        dateModified: '2026-06-25',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -246,6 +246,33 @@ export default function PostPage() {
             </Link>
             .
           </p>
+        </Section>
+
+        <Section title="Related implementation guides">
+          <p>
+            AI agent cost planning gets clearer when you separate the agent from the systems it must touch. Use these
+            adjacent guides to estimate integration complexity before committing to a roadmap.
+          </p>
+          <ul className="mt-4 list-disc pl-6 space-y-2">
+            <li>
+              <Link className="underline hover:text-white" href="/insights/ai-automation-services">
+                AI automation services
+              </Link>{' '}
+              for workflow mapping, approvals, and operations automation scope.
+            </li>
+            <li>
+              <Link className="underline hover:text-white" href="/insights/chatgpt-integration-services">
+                ChatGPT integration services
+              </Link>{' '}
+              for API, tool-calling, retrieval, and product integration planning.
+            </li>
+            <li>
+              <Link className="underline hover:text-white" href="/insights/ai-agent-development-company">
+                AI agent development company checklist
+              </Link>{' '}
+              for vendor evaluation, security questions, and production-readiness signals.
+            </li>
+          </ul>
         </Section>
 
         <Section title="FAQ: AI agent development cost">
