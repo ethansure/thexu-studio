@@ -407,6 +407,11 @@ export default function AIChatbotPage() {
             {
               [
                 {
+                  title: 'AI Chatbot ROI: Business Case, Metrics, and Payback',
+                  desc: 'How to model support savings, pipeline lift, payback period, and pilot metrics.',
+                  href: '/insights/ai-chatbot-roi',
+                },
+                {
                   title: 'AI Lead Generation Chatbot: Qualification + Booking Playbook',
                   desc: 'How to qualify inbound visitors, sync CRM fields, and book meetings while prospects are warm.',
                   href: '/insights/ai-lead-generation-chatbot',

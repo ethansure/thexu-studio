@@ -2,6 +2,13 @@ import Link from 'next/link'
 
 const posts = [
   {
+    title: 'AI Chatbot ROI: Business Case, Metrics, and Payback (2026)',
+    description:
+      'A practical guide to AI chatbot ROI: where chatbots create payback, which metrics to track, how to model savings and revenue, and what to build first.',
+    href: '/insights/ai-chatbot-roi',
+    date: '2026-06-25',
+  },
+  {
     title: 'AI Agent Development Cost: Budget, Timeline, and ROI (2026)',
     description:
       'A practical guide to AI agent development cost: project types, budget drivers, timelines, integrations, evaluation, security, and ROI planning for production AI agents.',
