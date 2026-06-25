@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI chatbot development services: architecture options (RAG, tools), project phases, realistic pricing, security, and a checklist to ship to production.',
         datePublished: '2026-05-14',
-        dateModified: '2026-05-14',
+        dateModified: '2026-06-25',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -218,6 +218,23 @@ export default function PostPage() {
           </p>
         </Section>
 
+        <Section title="ROI and proof to review before hiring">
+          <p>
+            Before choosing an AI chatbot development partner, tie the build to a measurable business case. Use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-roi">
+              AI chatbot ROI guide
+            </Link>{' '}
+            to model support deflection, qualified leads, booked meetings, and cost per resolved conversation.
+          </p>
+          <p className="mt-4">
+            Then compare that model against a shipped example like the{' '}
+            <Link className="underline hover:text-white" href="/case-studies/ecommerce-chatbot">
+              e-commerce chatbot case study
+            </Link>
+            , which shows how RAG, CRM/helpdesk integration, and human handoff translate into production outcomes.
+          </p>
+        </Section>
+
         <Section title="A scope checklist you can copy-paste">
           <ul className="list-disc pl-6 space-y-2">
             <li>Top 20 intents (questions/actions) + examples</li>
@@ -251,4 +268,3 @@ export default function PostPage() {
     </div>
   )
 }
-
