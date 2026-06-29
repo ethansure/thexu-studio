@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical breakdown of AI chatbot development cost, timeline, and scoping. Learn what drives pricing, typical phases, and how to ship a production-grade chatbot.',
         datePublished: '2026-05-09',
-        dateModified: '2026-05-09',
+        dateModified: '2026-06-29',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -169,6 +169,14 @@ export default function PostPage() {
             Model costs are usually a smaller portion than people expect (especially compared to the time spent on
             product/engineering to make the bot safe and useful).
           </p>
+          <p className="mt-4">
+            To connect the estimate to business impact, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-roi">
+              AI chatbot ROI guide
+            </Link>{' '}
+            to compare build cost against support deflection, qualified leads, booked meetings, and cost per resolved
+            conversation.
+          </p>
         </Section>
 
         <Section title="A simple timeline that actually works">
@@ -239,4 +247,3 @@ export default function PostPage() {
     </div>
   )
 }
-
