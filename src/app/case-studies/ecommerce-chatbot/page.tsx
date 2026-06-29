@@ -139,12 +139,18 @@ export default function EcommerceChatbotCaseStudyPage() {
             Planning a similar customer support automation project? These guides explain the cost,
             architecture, and rollout decisions behind a production AI chatbot for business.
           </p>
-          <div className="grid md:grid-cols-3 gap-3 mt-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
             <Link
               href="/insights/ai-chatbot-development-cost"
               className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
             >
               AI Chatbot Development Cost
+            </Link>
+            <Link
+              href="/insights/ai-chatbot-roi"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Chatbot ROI
             </Link>
             <Link
               href="/insights/ai-chatbot-development"
