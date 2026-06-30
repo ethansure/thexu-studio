@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI lead generation chatbots: qualify inbound visitors, enrich accounts, sync CRM fields, book meetings, and measure pipeline impact.',
         datePublished: '2026-06-18',
-        dateModified: '2026-06-18',
+        dateModified: '2026-06-30',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -123,7 +123,7 @@ export default function PostPage() {
               </Link>
               <Link
                 className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
-                href="/insights/ai-chatbot-for-business"
+                href="/insights/ai-chatbot-roi"
               >
                 AI chatbot ROI guide
               </Link>
@@ -213,7 +213,11 @@ export default function PostPage() {
               lead qualification AI agent case study
             </Link>
             . It shows how an AI workflow can score inbound leads, enrich data, route prospects, and reduce the time
-            from inquiry to sales follow-up.
+            from inquiry to sales follow-up. For the business-case model behind that rollout, pair it with the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-roi">
+              AI chatbot ROI guide
+            </Link>
+            .
           </p>
         </Section>
 
