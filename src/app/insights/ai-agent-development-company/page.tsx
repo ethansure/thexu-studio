@@ -48,7 +48,7 @@ export default function PostPage() {
         description:
           'A practical checklist for choosing an AI agent development company: architecture, integrations, evaluation, security, and what a realistic delivery timeline looks like.',
         datePublished: '2026-05-10',
-        dateModified: '2026-06-19',
+        dateModified: '2026-06-30',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -204,7 +204,12 @@ export default function PostPage() {
             </li>
           </ul>
           <p className="mt-4">
-            If a vendor can’t show you how they test and monitor an agent, you’re buying a prototype.
+            If a vendor can’t show you how they test and monitor an agent, you’re buying a prototype. For a concrete
+            sales workflow example, compare this checklist with the{' '}
+            <Link className="underline hover:text-white" href="/case-studies/lead-qualification-ai-agent">
+              lead qualification AI agent case study
+            </Link>
+            .
           </p>
         </Section>
 
