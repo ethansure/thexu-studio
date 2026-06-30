@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to choosing the right custom AI solution: where AI delivers ROI, typical costs and timelines, and implementation patterns for chatbots, agents, and automation.',
         datePublished: '2026-05-11',
-        dateModified: '2026-05-11',
+        dateModified: '2026-06-30',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -190,7 +190,11 @@ export default function PostPage() {
             </li>
           </ul>
           <p className="mt-4">
-            The biggest driver of cost isn’t “prompting” — it’s integration + evaluation + operational reliability.
+            The biggest driver of cost isn’t “prompting” — it’s integration + evaluation + operational reliability. For a deeper budget breakdown, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-agent-development-cost">
+              AI agent development cost guide
+            </Link>{' '}
+            before scoping tool use, approvals, and monitoring.
           </p>
         </Section>
 
