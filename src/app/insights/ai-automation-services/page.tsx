@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI automation services: what to automate first, architecture patterns (RAG + tools + agents), timelines, pricing, and an ROI-focused delivery checklist.',
         datePublished: '2026-06-01',
-        dateModified: '2026-06-01',
+        dateModified: '2026-06-30',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -202,6 +202,13 @@ export default function PostPage() {
           <p>
             For most teams, successful AI automation delivery is about scope discipline, not model novelty.
           </p>
+          <p className="mt-4">
+            If the automation includes agents, tool use, or multi-system approvals, compare the scope against our{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-agent-development-cost">
+              AI agent development cost guide
+            </Link>{' '}
+            before budgeting integrations and monitoring.
+          </p>
           <ul className="mt-4 list-disc pl-6 space-y-2">
             <li>
               <strong>2–3 weeks:</strong> single workflow MVP (one system, clear success metric).
@@ -259,4 +266,3 @@ export default function PostPage() {
     </div>
   )
 }
-
