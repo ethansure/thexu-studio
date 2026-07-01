@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI chatbot development: best architectures (RAG + tools), implementation steps, costs, and a checklist for shipping a production chatbot.',
         datePublished: '2026-05-16',
-        dateModified: '2026-05-16',
+        dateModified: '2026-07-01',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -122,6 +122,12 @@ export default function PostPage() {
               </Link>
               <Link
                 className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/ai-chatbot-development-services"
+              >
+                Services roadmap
+              </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
                 href="/chatgpt-integration"
               >
                 ChatGPT integration
@@ -202,6 +208,11 @@ export default function PostPage() {
             If you want a deeper breakdown of cost drivers (data prep, integrations, evaluation, and ongoing ops), see{' '}
             <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-cost">
               AI Chatbot Development Cost & Timeline
+            </Link>
+            .
+            For a service-scope roadmap that covers project phases, security, pricing, and proof examples, compare it with{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
+              AI chatbot development services
             </Link>
             .
           </p>
