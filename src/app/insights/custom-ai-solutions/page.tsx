@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to choosing the right custom AI solution: where AI delivers ROI, typical costs and timelines, and implementation patterns for chatbots, agents, and automation.',
         datePublished: '2026-05-11',
-        dateModified: '2026-06-30',
+        dateModified: '2026-07-07',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -154,6 +154,13 @@ export default function PostPage() {
               controls.
             </li>
           </ul>
+          <p className="mt-4">
+            If the work is mostly approvals, handoffs, and back-office process redesign, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-automation-services">
+              AI automation services guide
+            </Link>{' '}
+            to scope the workflow before deciding whether it needs an agent, chatbot, or simpler integration layer.
+          </p>
         </Section>
 
         <Section title="Where custom AI delivers ROI fastest">
