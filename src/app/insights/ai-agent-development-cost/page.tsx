@@ -49,7 +49,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI agent development cost: what drives budget, realistic timelines, integration scope, evaluation, security, and ROI planning for production AI agents.',
         datePublished: '2026-06-20',
-        dateModified: '2026-06-25',
+        dateModified: '2026-07-07',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -230,7 +230,12 @@ export default function PostPage() {
           </p>
           <ul className="mt-4 list-disc pl-6 space-y-2">
             <li>
-              <strong>Lead qualification:</strong> more meetings booked, faster response time, cleaner CRM fields.
+              <strong>Lead qualification:</strong> more meetings booked, faster response time, cleaner CRM fields, and a
+              clearer path from the{' '}
+              <Link className="underline hover:text-white" href="/insights/ai-lead-generation-chatbot">
+                lead generation chatbot workflow
+              </Link>{' '}
+              to a qualified sales conversation.
             </li>
             <li>
               <strong>Support operations:</strong> fewer manual triage steps, faster ticket routing, lower backlog.
