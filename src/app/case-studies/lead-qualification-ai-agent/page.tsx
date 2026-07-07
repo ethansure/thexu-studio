@@ -142,7 +142,7 @@ export default function LeadQualificationAIAgentCaseStudyPage() {
             Use these implementation guides to compare AI agent development, AI automation services,
             and custom AI solutions before building a sales operations workflow.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 mt-5">
             <Link
               href="/insights/ai-lead-generation-chatbot"
               className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
@@ -154,6 +154,12 @@ export default function LeadQualificationAIAgentCaseStudyPage() {
               className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
             >
               AI Agent Development Company
+            </Link>
+            <Link
+              href="/insights/ai-agent-development-cost"
+              className="rounded-xl border border-slate-800 p-4 text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition"
+            >
+              AI Agent Development Cost
             </Link>
             <Link
               href="/insights/ai-automation-services"
