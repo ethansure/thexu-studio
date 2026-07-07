@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI chatbot ROI: where chatbots create payback, which metrics to track, how to model savings and revenue, and what to build first.',
         datePublished: '2026-06-25',
-        dateModified: '2026-06-25',
+        dateModified: '2026-07-07',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -255,6 +255,14 @@ export default function PostPage() {
               ChatGPT integration checklist
             </Link>
             .
+          </p>
+          <p className="mt-4">
+            If the ROI case depends on booked meetings, use the{' '}
+            <Link className="underline hover:text-white" href="/case-studies/lead-qualification-ai-agent">
+              lead qualification AI agent case study
+            </Link>{' '}
+            as the proof pattern: qualify the visitor, capture clean CRM fields, and hand off only the leads that are
+            ready for sales follow-up.
           </p>
         </Section>
 
