@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI automation services: what to automate first, architecture patterns (RAG + tools + agents), timelines, pricing, and an ROI-focused delivery checklist.',
         datePublished: '2026-06-01',
-        dateModified: '2026-06-30',
+        dateModified: '2026-07-07',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -155,7 +155,11 @@ export default function PostPage() {
           <p>Start where the workflow is repetitive, text-heavy, and already has a clear definition of success.</p>
           <ul className="mt-4 list-disc pl-6 space-y-2">
             <li>
-              <strong>Lead intake + qualification:</strong> classify intent, ask follow-ups, enrich with firmographic data, book meetings.
+              <strong>Lead intake + qualification:</strong> classify intent, ask follow-ups, enrich with firmographic data, book meetings. For a production example, see the{' '}
+              <Link className="underline hover:text-white" href="/case-studies/lead-qualification-ai-agent">
+                lead qualification AI agent case study
+              </Link>
+              .
             </li>
             <li>
               <strong>Support triage:</strong> categorize, draft replies with citations, route to the right queue.
