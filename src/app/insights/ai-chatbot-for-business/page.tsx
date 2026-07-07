@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to building an AI chatbot for business: high-ROI use cases, architecture, integrations, costs, risks, and a launch checklist for production AI chatbot development.',
         datePublished: '2026-06-10',
-        dateModified: '2026-06-10',
+        dateModified: '2026-07-06',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -148,6 +148,12 @@ export default function PostPage() {
               >
                 Chatbot cost guide
               </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/ai-chatbot-roi"
+              >
+                Chatbot ROI guide
+              </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/#contact">
                 Scope a chatbot
               </Link>
@@ -217,7 +223,11 @@ export default function PostPage() {
           </ul>
           <p className="mt-4">
             If the first use case cannot show a measurable path to saved time or added pipeline, choose a narrower
-            workflow before writing code.
+            workflow before writing code. For a deeper model, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-roi">
+              AI chatbot ROI guide
+            </Link>{' '}
+            to map saved time, pipeline lift, software costs, and maintenance before the pilot starts.
           </p>
         </Section>
 
