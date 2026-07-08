@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to building an AI chatbot for business: high-ROI use cases, architecture, integrations, costs, risks, and a launch checklist for production AI chatbot development.',
         datePublished: '2026-06-10',
-        dateModified: '2026-07-06',
+        dateModified: '2026-07-08',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -154,6 +154,12 @@ export default function PostPage() {
               >
                 Chatbot ROI guide
               </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/ai-lead-generation-chatbot"
+              >
+                Lead generation chatbot guide
+              </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/#contact">
                 Scope a chatbot
               </Link>
@@ -184,6 +190,13 @@ export default function PostPage() {
               escalate complex issues.
             </li>
           </ul>
+          <p className="mt-4">
+            If revenue capture is the first priority, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-lead-generation-chatbot">
+              AI lead generation chatbot playbook
+            </Link>{' '}
+            to map the qualification fields, CRM handoff, and booking flow before the business chatbot pilot starts.
+          </p>
         </Section>
 
         <Section title="What production AI chatbot development includes">
