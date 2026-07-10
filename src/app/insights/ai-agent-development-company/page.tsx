@@ -48,7 +48,7 @@ export default function PostPage() {
         description:
           'A practical checklist for choosing an AI agent development company: architecture, integrations, evaluation, security, and what a realistic delivery timeline looks like.',
         datePublished: '2026-05-10',
-        dateModified: '2026-06-30',
+        dateModified: '2026-07-09',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -279,7 +279,12 @@ export default function PostPage() {
           <p>
             If you want a fast, accurate estimate, send us: your top 25 user requests, the systems the agent must
             integrate with, and any compliance constraints. We’ll reply with a scoped MVP plan and a realistic path to
-            production.
+            production. If you are still deciding whether the right solution is an agent, chatbot, or automation layer,
+            use the{' '}
+            <Link className="underline hover:text-white" href="/insights/custom-ai-solutions">
+              custom AI solutions guide
+            </Link>{' '}
+            to compare the implementation patterns first.
           </p>
         </Section>
 
