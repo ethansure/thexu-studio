@@ -54,7 +54,7 @@ export default function PostPage() {
         description:
           'A practical guide to ChatGPT integration services: architecture, RAG, tool/function calling, security, evaluation, and go-live checklist for production deployments.',
         datePublished: '2026-05-12',
-        dateModified: '2026-07-07',
+        dateModified: '2026-07-10',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -131,7 +131,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • Updated 2026-07-07</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-10</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             ChatGPT Integration Services: What to Build + Implementation Checklist (2026)
           </h1>
@@ -213,7 +213,11 @@ export default function PostPage() {
           </ol>
           <p className="mt-4">
             If you’re building a lead-gen or support experience, start with a constrained set of intents + tools and
-            expand once you have evaluation and monitoring in place. For broader workflow design beyond chat, use the{' '}
+            expand once you have evaluation and monitoring in place. For a concrete sales workflow example, review the{' '}
+            <Link className="underline hover:text-white" href="/case-studies/lead-qualification-ai-agent">
+              lead qualification AI agent case study
+            </Link>{' '}
+            before choosing which CRM actions the assistant should own. For broader workflow design beyond chat, use the{' '}
             <Link className="underline hover:text-white" href="/insights/ai-automation-services">
               AI automation services guide
             </Link>{' '}
