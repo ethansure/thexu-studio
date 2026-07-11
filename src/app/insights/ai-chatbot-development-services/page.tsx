@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI chatbot development services: architecture options (RAG, tools), project phases, realistic pricing, security, and a checklist to ship to production.',
         datePublished: '2026-05-14',
-        dateModified: '2026-06-25',
+        dateModified: '2026-07-10',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -169,6 +169,11 @@ export default function PostPage() {
             </li>
             <li>
               <strong>Tool-using bot:</strong> takes actions (refund, reschedule, update CRM)—requires stronger controls.
+              For sales workflows, compare the handoff and CRM update pattern in the{' '}
+              <Link className="underline hover:text-white" href="/insights/ai-lead-generation-chatbot">
+                AI lead generation chatbot workflow
+              </Link>
+              .
             </li>
             <li>
               <strong>Agentic workflows:</strong> multi-step planning/execution—use when a single action isn’t enough.
