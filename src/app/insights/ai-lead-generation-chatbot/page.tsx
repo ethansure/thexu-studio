@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI lead generation chatbots: qualify inbound visitors, enrich accounts, sync CRM fields, book meetings, and measure pipeline impact.',
         datePublished: '2026-06-18',
-        dateModified: '2026-06-30',
+        dateModified: '2026-07-11',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -99,7 +99,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • 2026-06-18</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-11</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             AI Lead Generation Chatbot: Qualification + Booking Playbook (2026)
           </h1>
@@ -126,6 +126,12 @@ export default function PostPage() {
                 href="/insights/ai-chatbot-roi"
               >
                 AI chatbot ROI guide
+              </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/ai-chatbot-development-services"
+              >
+                Development services checklist
               </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/#contact">
                 Scope a chatbot
@@ -185,7 +191,11 @@ export default function PostPage() {
           <p className="mt-4">
             For a deeper implementation breakdown, read the{' '}
             <Link className="underline hover:text-white" href="/insights/ai-chatbot-development">
-              AI chatbot development guide
+              AI chatbot development guide,
+            </Link>{' '}
+            the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
+              AI chatbot development services checklist,
             </Link>{' '}
             and the{' '}
             <Link className="underline hover:text-white" href="/insights/chatgpt-integration-services">
