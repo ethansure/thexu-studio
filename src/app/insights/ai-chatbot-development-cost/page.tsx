@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical breakdown of AI chatbot development cost, timeline, and scoping. Learn what drives pricing, typical phases, and how to ship a production-grade chatbot.',
         datePublished: '2026-05-09',
-        dateModified: '2026-06-29',
+        dateModified: '2026-07-10',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -143,7 +143,12 @@ export default function PostPage() {
           </ul>
           <p className="mt-4">
             If you want a concrete number, we typically scope a build by the number of <em>data sources</em>, <em>actions</em>{' '}
-            (API tool calls), and <em>risk level</em> (PII/compliance). Those three factors predict the engineering effort.
+            (API tool calls), and <em>risk level</em> (PII/compliance). Those three factors predict the engineering effort.{' '}
+            For a more complete vendor checklist, compare the estimate against our{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
+              AI chatbot development services guide
+            </Link>
+            .
           </p>
         </Section>
 
