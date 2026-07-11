@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI chatbot development: best architectures (RAG + tools), implementation steps, costs, and a checklist for shipping a production chatbot.',
         datePublished: '2026-05-16',
-        dateModified: '2026-07-01',
+        dateModified: '2026-07-11',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -210,7 +210,11 @@ export default function PostPage() {
               AI Chatbot Development Cost & Timeline
             </Link>
             .
-            For a service-scope roadmap that covers project phases, security, pricing, and proof examples, compare it with{' '}
+            Before you approve the scope, sanity-check the business case with the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-roi">
+              AI chatbot ROI guide
+            </Link>
+            . For a service-scope roadmap that covers project phases, security, pricing, and proof examples, compare it with{' '}
             <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
               AI chatbot development services
             </Link>
