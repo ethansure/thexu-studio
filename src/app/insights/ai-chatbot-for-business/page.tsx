@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to building an AI chatbot for business: high-ROI use cases, architecture, integrations, costs, risks, and a launch checklist for production AI chatbot development.',
         datePublished: '2026-06-10',
-        dateModified: '2026-07-08',
+        dateModified: '2026-07-11',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -120,7 +120,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • 2026-06-10</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-11</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             AI Chatbot for Business: Use Cases, ROI, and Build Plan (2026)
           </h1>
@@ -253,6 +253,10 @@ export default function PostPage() {
           </ul>
           <p className="mt-4">
             For more detail on architecture and integration choices, see our{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
+              AI chatbot development services checklist
+            </Link>
+            ,{' '}
             <Link className="underline hover:text-white" href="/insights/ai-chatbot-development">
               AI chatbot development guide
             </Link>{' '}
