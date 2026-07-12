@@ -49,7 +49,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI agent development cost: what drives budget, realistic timelines, integration scope, evaluation, security, and ROI planning for production AI agents.',
         datePublished: '2026-06-20',
-        dateModified: '2026-07-07',
+        dateModified: '2026-07-12',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -128,7 +128,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • 2026-06-20</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-12</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             AI Agent Development Cost: Budget, Timeline, and ROI (2026)
           </h1>
@@ -204,6 +204,14 @@ export default function PostPage() {
               <strong>Observability:</strong> traces, cost dashboards, latency tracking, and failure reports.
             </li>
           </ul>
+          <p className="mt-4">
+            If you are comparing vendors, turn each driver into a discovery question before the estimate call. The{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-agent-development-company">
+              AI agent development company checklist
+            </Link>{' '}
+            covers the evaluation, permissions, and monitoring questions that usually separate a reliable production
+            agent from a short-lived prototype.
+          </p>
         </Section>
 
         <Section title="Timeline: pilot to production">
@@ -221,6 +229,14 @@ export default function PostPage() {
               <strong>Weeks 6-8:</strong> production hardening, monitoring, analytics, and rollout playbook.
             </li>
           </ol>
+          <p className="mt-4">
+            When the scope includes several departments or ambiguous workflows, start with the{' '}
+            <Link className="underline hover:text-white" href="/insights/custom-ai-solutions">
+              custom AI solutions guide
+            </Link>{' '}
+            to decide whether the first release should be an agent, chatbot, automation layer, or a smaller integration
+            pilot.
+          </p>
         </Section>
 
         <Section title="ROI model: how to justify the spend">
