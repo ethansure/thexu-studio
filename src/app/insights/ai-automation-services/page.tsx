@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI automation services: what to automate first, architecture patterns (RAG + tools + agents), timelines, pricing, and an ROI-focused delivery checklist.',
         datePublished: '2026-06-01',
-        dateModified: '2026-07-07',
+        dateModified: '2026-07-12',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -162,7 +162,12 @@ export default function PostPage() {
               .
             </li>
             <li>
-              <strong>Support triage:</strong> categorize, draft replies with citations, route to the right queue.
+              <strong>Support triage:</strong> categorize, draft replies with citations, route to the right queue. If
+              that workflow needs a customer-facing assistant, use the{' '}
+              <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
+                AI chatbot development services checklist
+              </Link>{' '}
+              to scope RAG, tools, handoff, and evaluation.
             </li>
             <li>
               <strong>Sales enablement:</strong> generate account briefs, personalize outreach, summarize calls into CRM fields.
