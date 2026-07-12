@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to choosing the right custom AI solution: where AI delivers ROI, typical costs and timelines, and implementation patterns for chatbots, agents, and automation.',
         datePublished: '2026-05-11',
-        dateModified: '2026-07-07',
+        dateModified: '2026-07-11',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -97,7 +97,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • 2026-05-11</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-11</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             Custom AI Solutions: What to Build, Cost, and Examples (2026 Guide)
           </h1>
@@ -111,6 +111,12 @@ export default function PostPage() {
             <div className="mt-3 flex flex-wrap gap-3 text-sm">
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/ai-chatbot">
                 AI Chatbot Development
+              </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/ai-chatbot-development-services"
+              >
+                Chatbot services checklist
               </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/ai-automation">
                 AI Workflow Automation
@@ -159,7 +165,12 @@ export default function PostPage() {
             <Link className="underline hover:text-white" href="/insights/ai-automation-services">
               AI automation services guide
             </Link>{' '}
-            to scope the workflow before deciding whether it needs an agent, chatbot, or simpler integration layer.
+            to scope the workflow before deciding whether it needs an agent, chatbot, or simpler integration layer. If
+            the first interface is a customer-facing assistant, compare the scope against the{' '}
+            <Link className="underline hover:text-white" href="/insights/ai-chatbot-development-services">
+              AI chatbot development services checklist
+            </Link>{' '}
+            so retrieval, handoff, analytics, and evaluation are planned together.
           </p>
         </Section>
 
