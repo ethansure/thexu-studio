@@ -48,7 +48,7 @@ export default function PostPage() {
         description:
           'A practical checklist for choosing an AI agent development company: architecture, integrations, evaluation, security, and what a realistic delivery timeline looks like.',
         datePublished: '2026-05-10',
-        dateModified: '2026-07-11',
+        dateModified: '2026-07-13',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -125,7 +125,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • Updated 2026-07-11</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-13</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             AI Agent Development Company: How to Choose (2026 Checklist)
           </h1>
@@ -217,6 +217,14 @@ export default function PostPage() {
               lead qualification AI agent case study
             </Link>
             .
+          </p>
+          <p className="mt-4">
+            For agents that rely on LLM tool calling, retrieval, or CRM/helpdesk actions, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/chatgpt-integration-services">
+              ChatGPT integration services checklist
+            </Link>{' '}
+            to pressure-test API orchestration, permissions, evaluation, and go-live requirements before vendor
+            estimates are compared.
           </p>
         </Section>
 
