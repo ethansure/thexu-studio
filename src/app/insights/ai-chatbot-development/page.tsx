@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI chatbot development: best architectures (RAG + tools), implementation steps, costs, and a checklist for shipping a production chatbot.',
         datePublished: '2026-05-16',
-        dateModified: '2026-07-11',
+        dateModified: '2026-07-12',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -100,7 +100,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • 2026-05-16</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-12</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">AI Chatbot Development: A Practical Guide (2026)</h1>
           <p className="mt-5 text-lg text-slate-400">
             “AI chatbot development” can mean anything from a simple FAQ bot to a production assistant that integrates
@@ -131,6 +131,12 @@ export default function PostPage() {
                 href="/chatgpt-integration"
               >
                 ChatGPT integration
+              </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/chatgpt-integration-services"
+              >
+                Integration checklist
               </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/#contact">
                 Talk to an engineer
@@ -176,7 +182,11 @@ export default function PostPage() {
               <h3 className="text-xl font-semibold">2) Action chatbot (RAG + tools)</h3>
               <p className="mt-2">
                 Best for lead qualification, order workflows, and operational tasks. Treat each action like an API product:
-                validate inputs, log everything, and add approvals for risky steps.
+                validate inputs, log everything, and add approvals for risky steps. Use the{' '}
+                <Link className="underline hover:text-white" href="/insights/chatgpt-integration-services">
+                  ChatGPT integration checklist
+                </Link>{' '}
+                to plan retrieval, function calling, and go-live controls before you connect production systems.
               </p>
             </div>
             <div>
@@ -219,6 +229,11 @@ export default function PostPage() {
               AI chatbot development services
             </Link>
             .
+            If the project depends on private data or business-system actions, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/chatgpt-integration-services">
+              ChatGPT integration services checklist
+            </Link>{' '}
+            to map RAG, tool permissions, evaluation, and deployment requirements before the build starts.
           </p>
         </Section>
 
