@@ -31,7 +31,7 @@ export default function PostPage() {
         description:
           'A practical guide to AI automation services: what to automate first, architecture patterns (RAG + tools + agents), timelines, pricing, and an ROI-focused delivery checklist.',
         datePublished: '2026-06-01',
-        dateModified: '2026-07-12',
+        dateModified: '2026-07-13',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -126,6 +126,12 @@ export default function PostPage() {
               >
                 ChatGPT integration checklist
               </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/custom-ai-solutions"
+              >
+                Custom AI solutions guide
+              </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/#contact">
                 Talk to an engineer
               </Link>
@@ -185,7 +191,11 @@ export default function PostPage() {
             <Link className="underline hover:text-white" href="/insights/ai-agent-development-company">
               how to choose an AI agent development partner
             </Link>
-            .
+            . If the workflow spans multiple departments or products, use the{' '}
+            <Link className="underline hover:text-white" href="/insights/custom-ai-solutions">
+              custom AI solutions scoping guide
+            </Link>{' '}
+            to decide what should be packaged, integrated, or custom-built.
           </p>
         </Section>
 
