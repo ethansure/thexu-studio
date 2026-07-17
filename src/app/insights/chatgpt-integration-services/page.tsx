@@ -54,7 +54,7 @@ export default function PostPage() {
         description:
           'A practical guide to ChatGPT integration services: architecture, RAG, tool/function calling, security, evaluation, and go-live checklist for production deployments.',
         datePublished: '2026-05-12',
-        dateModified: '2026-07-11',
+        dateModified: '2026-07-16',
         inLanguage: 'en-US',
         mainEntityOfPage: {
           '@type': 'WebPage',
@@ -131,7 +131,7 @@ export default function PostPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-14">
         <header>
-          <p className="text-sm text-slate-500">Insights • Updated 2026-07-11</p>
+          <p className="text-sm text-slate-500">Insights • Updated 2026-07-16</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
             ChatGPT Integration Services: What to Build + Implementation Checklist (2026)
           </h1>
@@ -161,6 +161,12 @@ export default function PostPage() {
               </Link>
               <Link className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition" href="/ai-agents">
                 AI Agent Development
+              </Link>
+              <Link
+                className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
+                href="/insights/ai-agent-development-company"
+              >
+                AI Agent Development Company
               </Link>
               <Link
                 className="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-800 transition"
@@ -326,6 +332,12 @@ export default function PostPage() {
               href="/insights/ai-automation-services"
             >
               Workflow guide: AI automation services for business processes
+            </Link>
+            <Link
+              className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 text-slate-200 transition hover:border-blue-500/60 hover:text-white"
+              href="/insights/ai-agent-development-company"
+            >
+              Vendor checklist: How to choose an AI agent development company
             </Link>
           </div>
         </Section>
